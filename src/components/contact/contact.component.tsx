@@ -2,8 +2,14 @@ import React from "react";
 
 import { ContactContainer } from "./contact.styles";
 
+import { Section } from "../section/section.styles";
+
 const Contact = () => {
-  return <ContactContainer>Contact</ContactContainer>;
+  return (
+    <Section id="contact">
+      <ContactContainer>Contact</ContactContainer>
+    </Section>
+  );
 };
 
 export default Contact;

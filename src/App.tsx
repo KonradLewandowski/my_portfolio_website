@@ -4,6 +4,7 @@ import Header from "./components/header/header.component";
 import Navigation from "./components/navigation/navigation.component";
 import About from "./components/about/about.component";
 import Experience from "./components/experience/experience.component";
+import Services from "./components/services/services.component";
 import Portfolio from "./components/portfolio/portfolio.component";
 import Testimonials from "./components/testimonials/testimonials.component";
 import Contact from "./components/contact/contact.component";
@@ -15,6 +16,7 @@ const App = () => (
     <Navigation />
     <About />
     <Experience />
+    <Services />
     <Portfolio />
     <Testimonials />
     <Contact />
