@@ -38,7 +38,7 @@ const Cards = () => {
   return (
     <CardsContainer>
       {cardContent.map((card, index) => (
-        <Card key={index} {...card} />
+        <Card key={card.title} {...card} />
       ))}
     </CardsContainer>
   );

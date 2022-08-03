@@ -6,27 +6,51 @@ const BaseButton = styled.div`
   width: max-content;
   display: inline-block;
   padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid ${variable.color.primary};
-  transition: ${variable.effect.transition};
 
-  &:hover {
-    background: ${variable.color.white};
-    color: ${variable.color.background};
-    border-color: transparent;
-  }
+  cursor: pointer;
 `;
 
 export const MainButton = styled(BaseButton)`
-  & > a {
+  border: 1px solid transparent;
+  transition: ${variable.effect.transition};
+
+  &:hover {
+    border: 1px solid ${variable.color.white};
+
+    & > a {
+      color: ${variable.color.white};
+    }
+  }
+
+  & a {
     color: ${variable.color.primary};
+    mix-blend-mode: difference;
   }
 `;
 
 export const ButtonPrimary = styled(BaseButton)`
-  & > a {
-    color: ${variable.color.background};
+  position: relative;
+  &::before {
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: ${variable.color.white};
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  background: ${variable.color.primary};
+
+  &:hover {
+    &::before {
+      background: ${variable.color.backgoundVariant};
+      width: 100%;
+    }
+  }
+
+  & a {
+    color: ${variable.color.white};
+    mix-blend-mode: difference;
+  }
 `;

@@ -17,7 +17,7 @@ export const NavigationContainer = styled.div`
   border-radius: 3rem;
   backdrop-filter: blur(15px);
 
-  & > a {
+  & a {
     background: transparent;
     padding: 0.8rem;
     border-radius: 50%;

@@ -1,4 +1,6 @@
-import React from "react";
+import { useContext } from "react";
+
+import AboutContext from "../../../../context/about.context";
 
 import { CardContainer } from "./card.styles";
 
@@ -11,9 +13,10 @@ const Card = ({
   title: string;
   content: string;
 }) => {
-  console.log(icon);
+  const { changeText } = useContext(AboutContext);
+
   return (
-    <CardContainer>
+    <CardContainer onClick={() => changeText(title.toLowerCase())}>
       {icon}
       <h5>{title}</h5>
       <small>{content}</small>

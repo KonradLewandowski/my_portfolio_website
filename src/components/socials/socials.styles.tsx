@@ -10,7 +10,7 @@ export const SocialsContainer = styled.div`
   gap: 0.8rem;
   position: absolute;
   left: 0;
-  bottom: 3rem;
+  bottom: 1rem;
 
   &::after {
     content: "";

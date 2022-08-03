@@ -5,7 +5,8 @@ import { variable } from "../variable/variable.styles";
 
 export const Section = styled.section`
   margin-top: 8rem;
-  height: 100vh;
+  min-height: 100vh;
+  border: 1px solid white;
 
   & > h2,
   & > h5 {

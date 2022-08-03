@@ -10,11 +10,15 @@ import Testimonials from "./components/testimonials/testimonials.component";
 import Contact from "./components/contact/contact.component";
 import Footer from "./components/footer/footer.component";
 
+import { AboutProvider } from "./context/about.context";
+
 const App = () => (
   <>
     <Header />
     <Navigation />
-    <About />
+    <AboutProvider>
+      <About />
+    </AboutProvider>
     <Experience />
     <Services />
     <Portfolio />

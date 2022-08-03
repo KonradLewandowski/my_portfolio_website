@@ -1,4 +1,8 @@
-import React from "react";
+import { useContext } from "react";
+import { Link } from "react-scroll";
+import Typed from "react-typed";
+
+import AboutContext from "../../../context/about.context";
 
 import { AboutContentContainer } from "./about-content.styles";
 import { ButtonPrimary } from "../../button/button.styles";
@@ -6,19 +10,17 @@ import { ButtonPrimary } from "../../button/button.styles";
 import Cards from "./cards/cards.component";
 
 const AboutContent = () => {
+  const { state } = useContext(AboutContext);
+
   return (
     <AboutContentContainer>
       <Cards />
-      <p>
-        For the past year I have focused on building and expanding my skills in the field
-        of web development. Front-end, back-end, data bases and external API’s are some of
-        the topics I have made myself familiar with. I would gladly become a part of a
-        team of developers, from whom I can learn and further expand my abilities while
-        working to achieve common objectives.
-      </p>
 
+      <p>
+        <Typed strings={[state]} />
+      </p>
       <ButtonPrimary>
-        <a href="#contact">Let's Talk</a>
+        <Link to="contact">Let's Talk</Link>
       </ButtonPrimary>
     </AboutContentContainer>
   );

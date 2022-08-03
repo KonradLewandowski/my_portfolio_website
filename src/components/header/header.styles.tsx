@@ -5,7 +5,7 @@ import { Container } from "../container/container.styles";
 import { device } from "../device/device.styles";
 
 export const HeaderContainer = styled.header`
-  height: 100vh;
+  max-height: 100vh;
   padding-top: 7rem;
   overflow: hidden;
 `;
@@ -15,11 +15,11 @@ export const HeaderContainerContent = styled(Container)`
   height: 100%;
   position: relative;
 
-  @media screen and (max-width: ${device.tablet}) {
+  /* @media screen and (max-width: ${device.tablet}) {
     height: 68vh;
   }
 
   @media screen and (max-width: ${device.mobile}) {
     height: 100vh;
-  }
+  } */
 `;

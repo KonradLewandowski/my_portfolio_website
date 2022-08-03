@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-scroll";
+
 import CV from "../../assets/cv.pdf";
 
 import { CallToActionContainer } from "./call-to-action.styles";
@@ -13,7 +15,7 @@ const CallToAction = () => {
         </a>
       </MainButton>
       <ButtonPrimary>
-        <a href="contact">Let's Talk</a>
+        <Link to="contact">Let's Talk</Link>
       </ButtonPrimary>
     </CallToActionContainer>
   );
