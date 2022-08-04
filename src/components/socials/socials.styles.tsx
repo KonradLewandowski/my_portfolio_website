@@ -19,6 +19,15 @@ export const SocialsContainer = styled.div`
     background: ${variable.color.primary};
   }
   @media screen and (max-width: ${device.mobile}) {
-    display: none;
+    /* display: none; */
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 17vh;
+    gap: 2rem;
+
+    &::after {
+      content: none;
+    }
   }
 `;

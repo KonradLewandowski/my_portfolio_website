@@ -5,21 +5,23 @@ import AboutContext from "../../../../context/about.context";
 import { CardContainer } from "./card.styles";
 
 const Card = ({
+  id,
   icon,
   title,
-  content,
+  description,
 }: {
+  id: number;
   icon: string;
   title: string;
-  content: string;
+  description: string;
 }) => {
-  const { changeText } = useContext(AboutContext);
+  const { getStateName } = useContext(AboutContext);
 
   return (
-    <CardContainer onClick={() => changeText(title.toLowerCase())}>
+    <CardContainer onClick={() => getStateName(id)}>
       {icon}
       <h5>{title}</h5>
-      <small>{content}</small>
+      <small>{description}</small>
     </CardContainer>
   );
 };

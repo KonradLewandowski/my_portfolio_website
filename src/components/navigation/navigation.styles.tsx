@@ -26,12 +26,12 @@ export const NavigationContainer = styled.div`
     font-size: 1.2rem;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.2);
+      background: ${variable.color.navigation};
     }
 
     &.active {
-      background-color: ${variable.color.background};
-      color: ${variable.color.white};
+      background-color: ${variable.color.navigationVariant};
+      color: ${variable.color.primaryVariant};
     }
   }
 `;

@@ -1,45 +1,28 @@
-import React from "react";
+import { useContext } from "react";
+import AboutContext from "../../../../context/about.context";
 
 import { CardsContainer } from "./cards.styles";
 
 import Card from "../card/card.component";
 
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { RiFolderLine } from "react-icons/ri";
-
-interface CardContent {
-  icon: any;
-  title: string;
-  content: string;
-}
-
-const iconClassName = "icon";
-
-const cardContent: CardContent[] = [
-  {
-    icon: <FaAward className={iconClassName} />,
-    title: "Experience",
-    content: "lorem ipsum",
-  },
-  {
-    icon: <FiUsers className={iconClassName} />,
-    title: "Clients",
-    content: "100+",
-  },
-  {
-    icon: <RiFolderLine className={iconClassName} />,
-    title: "Projects",
-    content: "5+ completed",
-  },
-];
-
 const Cards = () => {
+  const { cardContent } = useContext(AboutContext);
+
   return (
     <CardsContainer>
-      {cardContent.map((card, index) => (
-        <Card key={card.title} {...card} />
-      ))}
+      {cardContent.map(
+        (
+          card: JSX.IntrinsicAttributes & {
+            id: number;
+            icon: string;
+            title: string;
+            description: string;
+          },
+          _index: any
+        ) => (
+          <Card key={card.id} {...card} />
+        )
+      )}
     </CardsContainer>
   );
 };

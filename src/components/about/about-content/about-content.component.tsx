@@ -1,24 +1,21 @@
 import { useContext } from "react";
-import { Link } from "react-scroll";
-import Typed from "react-typed";
 
 import AboutContext from "../../../context/about.context";
+
+import { Link } from "react-scroll";
 
 import { AboutContentContainer } from "./about-content.styles";
 import { ButtonPrimary } from "../../button/button.styles";
 
 import Cards from "./cards/cards.component";
+import Text from "./text/text.component";
 
 const AboutContent = () => {
   const { state } = useContext(AboutContext);
-
   return (
     <AboutContentContainer>
       <Cards />
-
-      <p>
-        <Typed strings={[state]} />
-      </p>
+      <Text text={state} />
       <ButtonPrimary>
         <Link to="contact">Let's Talk</Link>
       </ButtonPrimary>

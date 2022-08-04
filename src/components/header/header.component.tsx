@@ -1,5 +1,4 @@
-import React from "react";
-import Typed from "react-typed";
+import TypeWriter from "typewriter-effect";
 
 import CallToAction from "./../call-to-action/call-to-action.component";
 // import Me from "../me/me.component";
@@ -17,12 +16,13 @@ const Header = () => {
         <h1>Konrad Lewandowski</h1>
         <TextLight>
           <h5>
-            <Typed
-              strings={["Frontend Developer", "Backend Developer"]}
-              typeSpeed={60}
-              backSpeed={40}
-              backDelay={2000}
-              loop
+            <TypeWriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 60,
+                strings: ["Frontend Developer", "Backend Developer"],
+              }}
             />
           </h5>
         </TextLight>

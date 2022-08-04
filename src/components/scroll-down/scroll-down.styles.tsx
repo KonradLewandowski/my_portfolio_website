@@ -11,6 +11,7 @@ export const ScrollDownContainer = styled.div`
   font-size: 0.9rem;
 
   @media screen and (max-width: ${device.mobile}) {
-    display: none;
+    /* display: none; */
+    bottom: 40vh;
   }
 `;

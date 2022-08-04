@@ -9,5 +9,7 @@ export const variable = {
     primaryVariant: "rgba(255, 170, 70, 0.4)",
     white: "white",
     light: "rgba(255, 255, 255, 0.6)",
+    navigation: "rgba(41, 166, 216, 0.1)",
+    navigationVariant: "rgba(255, 170, 70, 0.2)",
   },
 };

@@ -15,11 +15,11 @@ export const HeaderContainerContent = styled(Container)`
   height: 100%;
   position: relative;
 
-  /* @media screen and (max-width: ${device.tablet}) {
-    height: 68vh;
+  @media screen and (max-width: ${device.tablet}) {
+    height: 50vh;
   }
 
   @media screen and (max-width: ${device.mobile}) {
     height: 100vh;
-  } */
+  }
 `;
