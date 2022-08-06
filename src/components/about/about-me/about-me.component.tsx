@@ -1,6 +1,4 @@
-import React from "react";
-
-import ME from "../../../assets/me-about.jpg";
+import ME from "../../../assets/images/me-about.jpg";
 
 import { AboutMeContainer, MeImageContainer } from "./about-me.styles";
 

@@ -2,7 +2,11 @@ import { useEffect, useRef, useState } from "react";
 
 import { TextContainer } from "./text.styles";
 
-const Text: any = ({ text }: { text: string }) => {
+type Props = {
+  text: string;
+};
+
+const Text: React.FC<Props> = ({ text }) => {
   const index = useRef(0);
 
   const [currentText, setCurrentText] = useState(text);

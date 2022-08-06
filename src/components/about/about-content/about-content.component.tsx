@@ -11,11 +11,12 @@ import Cards from "./cards/cards.component";
 import Text from "./text/text.component";
 
 const AboutContent = () => {
-  const { state } = useContext(AboutContext);
+  const { content } = useContext(AboutContext);
+
   return (
     <AboutContentContainer>
       <Cards />
-      <Text text={state} />
+      <Text text={content} />
       <ButtonPrimary>
         <Link to="contact">Let's Talk</Link>
       </ButtonPrimary>

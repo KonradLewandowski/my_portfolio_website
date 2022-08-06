@@ -34,7 +34,7 @@ body {
   background: var(--color-background);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src//assets/pngegg.png);
+  background-image: url(../src//assets/images/pngegg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;

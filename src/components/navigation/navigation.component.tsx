@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
 import { Link } from "react-scroll";
 
 import {
@@ -16,7 +14,7 @@ const sectionsDetails = [
   { to: "home", icon: <AiOutlineHome /> },
   { to: "about", icon: <AiOutlineUser /> },
   { to: "experience", icon: <GiSkills /> },
-  { to: "services", icon: <AiFillProject /> },
+  { to: "portfolio", icon: <AiFillProject /> },
   { to: "contact", icon: <AiOutlineMessage /> },
 ];
 

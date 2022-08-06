@@ -1,16 +1,12 @@
-import { createContext, useState } from "react";
+import { createContext, ReactElement, useState } from "react";
 
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { RiFolderLine } from "react-icons/ri";
 
-type newProvider = { ({ children }: { children: any }): JSX.Element };
-
-const AboutContext = createContext<any | undefined>(undefined);
-
-type CardContent = {
+type CardProps = {
   id: number;
-  icon: any;
+  icon: ReactElement;
   title: string;
   description: string;
   content: string;
@@ -18,7 +14,7 @@ type CardContent = {
 
 const iconClassName = "icon";
 
-const cardContent: CardContent[] = [
+const cardAboutContent: CardProps[] = [
   {
     id: 0,
     icon: <FaAward className={iconClassName} />,
@@ -42,18 +38,32 @@ const cardContent: CardContent[] = [
   },
 ];
 
-export const AboutProvider: newProvider = ({ children }) => {
-  const [state, setState] = useState(cardContent[0].content);
+type AboutProviderType = {
+  content: string;
+  getContentName: (id: number) => void;
+  cardAboutContent: CardProps[];
+};
 
-  const getStateName = (id: number) => {
-    setState(cardContent[id].content);
+const AboutContext = createContext<AboutProviderType>({
+  content: "",
+  getContentName: () => {},
+  cardAboutContent: [],
+});
+
+export const AboutProvider: newProvider = ({ children }) => {
+  const [content, setContent] = useState(cardAboutContent[0].content);
+
+  const getContentName = (id: number) => {
+    setContent(cardAboutContent[id].content);
   };
 
-  return (
-    <AboutContext.Provider value={{ getStateName, state, cardContent }}>
-      {children}
-    </AboutContext.Provider>
-  );
+  const value: AboutProviderType = {
+    getContentName,
+    content,
+    cardAboutContent,
+  };
+
+  return <AboutContext.Provider value={value}>{children}</AboutContext.Provider>;
 };
 
 export default AboutContext;

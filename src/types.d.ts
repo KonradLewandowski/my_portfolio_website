@@ -1,5 +1,5 @@
-declare module "*.pdf";
-declare module "*.png";
-declare module "*.jpg";
-declare module "react-scroll";
-declare module "react-typewriter-effect";
+export {};
+
+declare global {
+  type newProvider = { ({ children }: { children: JSX.Element }): JSX.Element };
+}

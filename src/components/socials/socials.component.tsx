@@ -1,5 +1,3 @@
-import React from "react";
-
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ImProfile } from "react-icons/im";
 

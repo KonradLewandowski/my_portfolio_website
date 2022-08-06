@@ -10,6 +10,6 @@ export const MeContainer = styled.div`
   left: 50%;
   transform: translateX(-50%);
   margin-top: 4rem;
-  border-radius: 12rem 12rem 0 0;
+  /* border-radius: 12rem 12rem 0 0; */
   padding: 5rem 1.5rem 1.5rem 1.5rem;
 `;

@@ -1,5 +1,3 @@
-import React from "react";
-
 import { AboutContainer } from "./about.styles";
 import { Section } from "../section/section.styles";
 

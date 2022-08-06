@@ -1,5 +1,3 @@
-import React from "react";
-
 import { MeContainer } from "./me.styles";
 import ME from "../../assets/me.png";
 

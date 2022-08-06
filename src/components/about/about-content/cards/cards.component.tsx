@@ -1,28 +1,25 @@
-import { useContext } from "react";
+import { ReactElement, useContext } from "react";
 import AboutContext from "../../../../context/about.context";
 
 import { CardsContainer } from "./cards.styles";
 
 import Card from "../card/card.component";
 
+type CardProps = {
+  id: number;
+  icon: ReactElement;
+  title: string;
+  description: string;
+};
+
 const Cards = () => {
-  const { cardContent } = useContext(AboutContext);
+  const { cardAboutContent } = useContext(AboutContext);
 
   return (
     <CardsContainer>
-      {cardContent.map(
-        (
-          card: JSX.IntrinsicAttributes & {
-            id: number;
-            icon: string;
-            title: string;
-            description: string;
-          },
-          _index: any
-        ) => (
-          <Card key={card.id} {...card} />
-        )
-      )}
+      {cardAboutContent.map((card: CardProps) => (
+        <Card key={card.id} {...card} />
+      ))}
     </CardsContainer>
   );
 };

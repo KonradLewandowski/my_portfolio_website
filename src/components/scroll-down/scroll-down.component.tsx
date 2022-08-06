@@ -1,5 +1,3 @@
-import React from "react";
-
 import { ScrollDownContainer } from "./scroll-down.styles";
 
 const ScrollDown = () => {

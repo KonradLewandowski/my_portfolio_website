@@ -4,13 +4,14 @@ import Header from "./components/header/header.component";
 import Navigation from "./components/navigation/navigation.component";
 import About from "./components/about/about.component";
 import Experience from "./components/experience/experience.component";
-import Services from "./components/services/services.component";
 import Portfolio from "./components/portfolio/portfolio.component";
 import Testimonials from "./components/testimonials/testimonials.component";
 import Contact from "./components/contact/contact.component";
 import Footer from "./components/footer/footer.component";
 
 import { AboutProvider } from "./context/about.context";
+import { ExperienceProvider } from "./context/experience.context";
+import { PortfolioProvider } from "./context/portfolio.context";
 
 const App = () => (
   <>
@@ -19,9 +20,12 @@ const App = () => (
     <AboutProvider>
       <About />
     </AboutProvider>
-    <Experience />
-    <Services />
-    <Portfolio />
+    <ExperienceProvider>
+      <Experience />
+    </ExperienceProvider>
+    <PortfolioProvider>
+      <Portfolio />
+    </PortfolioProvider>
     <Testimonials />
     <Contact />
     <Footer />
