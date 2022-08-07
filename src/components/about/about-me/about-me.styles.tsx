@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { variable } from "../../variable/variable.styles";
 import { device } from "../../device/device.styles";
 
 export const AboutMeContainer = styled.div`
