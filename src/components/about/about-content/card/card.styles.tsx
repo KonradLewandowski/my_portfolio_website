@@ -12,6 +12,7 @@ export const CardContainer = styled.article`
 
   &:hover {
     border-color: ${variable.color.white};
+    background: transparent;
     cursor: default;
   }
 

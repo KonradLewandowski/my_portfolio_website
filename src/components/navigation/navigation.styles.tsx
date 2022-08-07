@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { variable } from "../variable/variable.styles";
 
 export const NavigationContainer = styled.div`
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.05);
   width: max-content;
   display: block;
   padding: 0.7rem 1.7rem;
@@ -16,8 +16,12 @@ export const NavigationContainer = styled.div`
   gap: 0.8rem;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
+  transition: ${variable.effect.transition};
+  :hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
 
-  & a {
+  a {
     background: transparent;
     padding: 0.8rem;
     border-radius: 50%;
@@ -25,7 +29,7 @@ export const NavigationContainer = styled.div`
     color: ${variable.color.light};
     font-size: 1.2rem;
 
-    &:hover {
+    :hover {
       background: ${variable.color.navigation};
     }
 

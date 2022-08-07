@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 
 import { PortfolioCardContainer } from "./portfolio-card.styles";
 
@@ -10,9 +10,17 @@ type Props = {
   gitHub: string;
   youTube: string;
   liveDemo: string;
+  technologies: ReactElement[];
 };
 
-const PortfolioCard: React.FC<Props> = ({ title, video, gitHub, youTube, liveDemo }) => {
+const PortfolioCard: React.FC<Props> = ({
+  title,
+  video,
+  gitHub,
+  youTube,
+  liveDemo,
+  technologies,
+}) => {
   const handleOnMouseOver = (e: React.MouseEvent<HTMLVideoElement>) =>
     e.currentTarget.play();
   const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) =>
@@ -34,6 +42,9 @@ const PortfolioCard: React.FC<Props> = ({ title, video, gitHub, youTube, liveDem
           <h3>{title}</h3>
           <p className="pc">*On mouse over</p>
           <p className="tablet-mobile">*On click</p>
+          <div className="technologies">
+            {technologies.map((technology, index) => technology)}
+          </div>
         </div>
       </article>
       <div>

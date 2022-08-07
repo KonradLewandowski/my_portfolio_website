@@ -11,6 +11,7 @@ export const PortfolioCardContainer = styled.div`
   background: ${variable.color.backgoundVariant};
   transition: ${variable.effect.transition};
   :hover {
+    background: transparent;
     border: 1px solid ${variable.color.white};
   }
 
@@ -22,7 +23,7 @@ export const PortfolioCardContainer = styled.div`
 
   .title {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -33,6 +34,28 @@ export const PortfolioCardContainer = styled.div`
     p {
       font-size: 10px;
       color: ${variable.color.light};
+    }
+
+    .technologies {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      color: ${variable.color.light};
+      font-size: 1.5rem;
+
+      .rotate {
+        animation: rotation 2.5s infinite linear;
+      }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
     }
 
     .tablet-mobile {

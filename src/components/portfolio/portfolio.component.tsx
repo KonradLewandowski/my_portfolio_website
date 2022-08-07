@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { ReactElement, useContext } from "react";
 
 import PortfolioContext from "../../context/portfolio.context";
 
@@ -15,15 +15,16 @@ type CardProps = {
   gitHub: string;
   youTube: string;
   liveDemo: string;
+  technologies: ReactElement[];
 };
 
 const Portfolio = () => {
   const { cardPortfolioContent } = useContext(PortfolioContext);
   return (
-    <Section>
+    <Section id="portfolio">
       <h5>What Have I Built?</h5>
       <h2>My Projects</h2>
-      <PortfolioContainer id="portfolio">
+      <PortfolioContainer>
         {cardPortfolioContent.map((card: CardProps) => (
           <PortfolioCard key={card.id} {...card} />
         ))}

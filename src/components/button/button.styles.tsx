@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 import { variable } from "../variable/variable.styles";
 
-const BaseButton = styled.div`
+const BaseButton = styled.button`
+  all: unset;
   width: max-content;
   display: inline-block;
   padding: 0.75rem 1.2rem;

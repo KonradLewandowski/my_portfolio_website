@@ -1,9 +1,30 @@
-import React from "react";
+import { Link } from "react-scroll";
 
-import { FooterContainer } from "./footer.styles";
+import { AiFillFacebook, AiOutlineCopyrightCircle } from "react-icons/ai";
+
+import { FooterContainer, LinksContainer } from "./footer.styles";
 
 const Footer = () => {
-  return <FooterContainer>Footer</FooterContainer>;
+  return (
+    <FooterContainer>
+      <div className="name">My Portfolio Website</div>
+      <LinksContainer>
+        <Link to="home">Home</Link>
+        <Link to="about">About</Link>
+        <Link to="experience">Experience</Link>
+        <Link to="portfolio">My Projects</Link>
+        <Link to="contact">contact</Link>
+      </LinksContainer>
+      <div className="socials">
+        <a href="https://www.facebook.com/kd.li.948/" target="_blank" rel="noreferrer">
+          <AiFillFacebook />
+        </a>
+      </div>
+      <div className="rights">
+        <AiOutlineCopyrightCircle /> Created by Konrad Lewandowski 2022
+      </div>
+    </FooterContainer>
+  );
 };
 
 export default Footer;
