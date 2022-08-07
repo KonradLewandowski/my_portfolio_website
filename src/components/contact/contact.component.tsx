@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 
 import Form from "./form/form.component";
 
-import { ContactContainer } from "./contact.styles";
+import { ContactContainer, OptionsContainer } from "./contact.styles";
 import { Section } from "../section/section.styles";
 import { MainButton } from "../button/button.styles";
 
@@ -56,7 +56,7 @@ const Contact = () => {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <ContactContainer>
-        <div className="options">
+        <OptionsContainer>
           <article key={0} className="option">
             <AiOutlineMail className="icon" />
             <h4>Email</h4>
@@ -95,7 +95,7 @@ const Contact = () => {
               </a>
             </MainButton>
           </article>
-        </div>
+        </OptionsContainer>
         <Form {...{ form, sendEmail, isSent, isMessage, isError }} />
       </ContactContainer>
     </Section>

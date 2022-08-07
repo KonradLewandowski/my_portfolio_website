@@ -12,7 +12,7 @@ const Footer = () => {
         <Link to="home">Home</Link>
         <Link to="about">About</Link>
         <Link to="experience">Experience</Link>
-        <Link to="portfolio">My Projects</Link>
+        <Link to="portfolio">Portfolio</Link>
         <Link to="contact">contact</Link>
       </LinksContainer>
       <div className="socials">

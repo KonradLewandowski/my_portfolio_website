@@ -4,10 +4,6 @@ import { variable } from "../../variable/variable.styles";
 import { device } from "../../device/device.styles";
 
 export const AboutMeContainer = styled.div`
-  width: 100%;
-  aspect-ratio: 1/1;
-  /* border-radius: 2rem; */
-  background: linear-gradient(45deg, transparent, ${variable.color.primary}, transparent);
   display: grid;
   place-items: center;
 
@@ -23,12 +19,5 @@ export const AboutMeContainer = styled.div`
 `;
 
 export const MeImageContainer = styled.div`
-  /* border-radius: 2rem; */
   overflow: hidden;
-  transform: rotate(10deg);
-  transition: ${variable.effect.transition};
-
-  &:hover {
-    transform: rotate(0);
-  }
 `;

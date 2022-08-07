@@ -21,7 +21,7 @@ export const NavigationContainer = styled.div`
     background: rgba(0, 0, 0, 0.4);
   }
 
-  a {
+  & a {
     background: transparent;
     padding: 0.8rem;
     border-radius: 50%;

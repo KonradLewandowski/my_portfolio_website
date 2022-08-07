@@ -37,7 +37,8 @@ export const LinksContainer = styled.div`
   margin: 0 1rem 1rem;
   margin-top: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
   a {
     font-size: 1rem;
     cursor: pointer;
