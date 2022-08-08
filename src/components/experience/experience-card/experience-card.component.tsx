@@ -3,7 +3,7 @@ import { ExperienceCardContainer } from "./experience-card.styles";
 
 type Props = {
   title: string;
-  content: { technology: string; level: "Experienced" | "Basic" }[];
+  content: { technology: string; level: "Familiar" | "Proficient" | "Excellent" }[];
   icon: ReactElement;
 };
 

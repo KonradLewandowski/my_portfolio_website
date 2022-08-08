@@ -2,19 +2,16 @@ import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
 import Form from "./form/form.component";
+import Options from "./options/options.component";
 
-import { ContactContainer, OptionsContainer } from "./contact.styles";
+import { ContactContainer } from "./contact.styles";
 import { Section } from "../section/section.styles";
-import { MainButton } from "../button/button.styles";
 
-import { AiOutlineMail } from "react-icons/ai";
-import { BsMessenger, BsWhatsapp } from "react-icons/bs";
-
-const { me, email, phone, messenger } = {
+const { me, email, messenger, phone } = {
   me: "Konrad Lewandowski",
   email: "konrad.lewandowski92@gmail.com",
-  phone: "0048666960130",
   messenger: "kd.li.948",
+  phone: "48666960130",
 };
 
 const Contact = () => {
@@ -56,46 +53,7 @@ const Contact = () => {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <ContactContainer>
-        <OptionsContainer>
-          <article key={0} className="option">
-            <AiOutlineMail className="icon" />
-            <h4>Email</h4>
-            <h5>{email}</h5>
-            <MainButton>
-              <a
-                href={`mailto:${email}?subject=Let's Talk!`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Send a message
-              </a>
-            </MainButton>
-          </article>
-          <article key={1} className="option">
-            <BsMessenger className="icon" />
-            <h4>Messenger</h4>
-            <h5>{me}</h5>
-            <MainButton>
-              <a href={`https://m.me/${messenger}`} target="_blank" rel="noreferrer">
-                Send a message
-              </a>
-            </MainButton>
-          </article>
-          <article key={2} className="option">
-            <BsWhatsapp className="icon" />
-            <h4>WhatsApp</h4>
-            <h5>Contact via app</h5>
-            <MainButton>
-              <a
-                href={`https://api.whatsapp.com/send?phone=${phone}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Send a message
-              </a>
-            </MainButton>
-          </article>
-        </OptionsContainer>
+        <Options {...{ me, email, messenger, phone }} />
         <Form {...{ form, sendEmail, isSent, isMessage, isError }} />
       </ContactContainer>
     </Section>

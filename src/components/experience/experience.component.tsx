@@ -13,7 +13,7 @@ const Experience = () => {
   type CardProps = {
     id: number;
     title: string;
-    content: { technology: string; level: "Experienced" | "Basic" }[];
+    content: { technology: string; level: "Familiar" | "Proficient" | "Excellent" }[];
     icon: ReactElement;
   };
 

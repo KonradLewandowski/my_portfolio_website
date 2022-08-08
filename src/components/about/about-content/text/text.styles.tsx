@@ -11,7 +11,7 @@ export const TextContainer = styled.p`
     }
   }
   /* Animation blink */
-  &:after {
+  :after {
     content: " ";
     padding: 1px;
     border-right: 4px solid ${variable.color.primary};

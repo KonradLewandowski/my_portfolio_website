@@ -23,12 +23,16 @@ export const PortfolioCardContainer = styled.div`
 
   .title {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 
     h3 {
+      white-space: nowrap;
+      padding: 0 10px;
       border: 1px solid white;
+      border-left-color: transparent;
+      border-right-color: transparent;
     }
 
     p {
@@ -58,7 +62,7 @@ export const PortfolioCardContainer = styled.div`
       }
     }
 
-    .tablet-mobile {
+    /* .tablet-mobile {
       display: none;
     }
 
@@ -69,7 +73,7 @@ export const PortfolioCardContainer = styled.div`
       .tablet-mobile {
         display: block;
       }
-    }
+    } */
   }
 
   video {

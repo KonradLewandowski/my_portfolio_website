@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import { device } from "../../device/device.styles";
 
+import ME from "../../../assets/images/me-about.png";
+
 export const AboutMeContainer = styled.div`
   display: grid;
   /* place-items: center; */
@@ -19,4 +21,8 @@ export const AboutMeContainer = styled.div`
 
 export const MeImageContainer = styled.div`
   overflow: hidden;
+
+  img {
+    content: url(${ME});
+  }
 `;

@@ -4,40 +4,43 @@ import { variable } from "../../variable/variable.styles";
 import { device } from "../../device/device.styles";
 
 export const ExperienceCardContainer = styled.div`
+  min-height: 370px;
   background: ${variable.color.backgoundVariant};
   border: 1px solid transparent;
   padding: 2.4rem 5rem;
   transition: ${variable.effect.transition};
 
-  &:hover {
+  :hover {
     background: transparent;
     border-color: ${variable.color.white};
   }
 
-  & h3 {
+  h3 {
     text-align: center;
 
     margin-bottom: 2rem;
   }
 
-  & small {
+  small {
     color: ${variable.color.light};
   }
 
-  & > div {
+  > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 0;
   }
 
-  & article {
-    display: flex;
+  article {
+    /* margin-left: 1rem; */
+    display: grid;
+    grid-template-columns: 10% 60%;
     gap: 1rem;
-    justify-content: center;
+    justify-content: end;
   }
 
-  & .icon {
+  .icon {
     margin-top: 6px;
     color: ${variable.color.primary};
   }

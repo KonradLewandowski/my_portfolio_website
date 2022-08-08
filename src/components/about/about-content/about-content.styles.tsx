@@ -7,7 +7,7 @@ export const AboutContentContainer = styled.div`
   @media screen and (max-width: ${device.mobile}) {
     text-align: center;
   }
-  & p {
+  p {
     margin: 2rem 0 2.6rem;
     color: ${variable.color.light};
 

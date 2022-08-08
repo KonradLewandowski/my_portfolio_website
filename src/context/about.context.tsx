@@ -1,8 +1,8 @@
 import { createContext, ReactElement, useState } from "react";
 
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
+import { CgProfile } from "react-icons/cg";
 import { RiFolderLine } from "react-icons/ri";
+import { ImNext } from "react-icons/im";
 
 type CardProps = {
   id: number;
@@ -17,24 +17,27 @@ const iconClassName = "icon";
 const cardAboutContent: CardProps[] = [
   {
     id: 0,
-    icon: <FaAward className={iconClassName} />,
+    icon: <CgProfile className={iconClassName} />,
     title: "Who Am I?",
     description: "A few words about me",
-    content: `For the past year I have focused on building and expanding my skills in the field of web development. Front-end, back-end, data bases and external API’s are some of the topics I have made myself familiar with. I would gladly become a part of a team of developers, from whom I can learn and further expand my abilities while working to achieve common objectives.`,
+    content:
+      "I am a former soldier and for the past year I have focused on building and expanding my skills in the field of web development. Frontend, Backend, data bases and external API’s are some of the technologies I have made myself familiar with. I would gladly become a part of a team of developers, from whom I can learn and further expand my abilities while working to achieve common objectives.",
   },
   {
     id: 1,
-    icon: <FiUsers className={iconClassName} />,
-    title: "Clients",
-    description: "100+",
-    content: "text",
+    icon: <RiFolderLine className={iconClassName} />,
+    title: "Projects",
+    description: "4+ completed",
+    content:
+      "I have completed numerous courses during which I built a variety of projects alongside the instructors and used the experience I gained to create four projects of my own since then improving and expanding my knowledge along the way.",
   },
   {
     id: 2,
-    icon: <RiFolderLine className={iconClassName} />,
-    title: "Projects",
-    description: "5+ completed",
-    content: "text2",
+    icon: <ImNext className={iconClassName} />,
+    title: "What Next(Js)?",
+    description: "I would like to...",
+    content:
+      "I am going to build another project which combines Backend and Frontend technologies. I am  planning on particularly mastering ReactJs in my future projects and I would also like to get acquainted with another library - NextJs.",
   },
 ];
 

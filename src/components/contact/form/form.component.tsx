@@ -16,7 +16,7 @@ type FormProps = {
 
 const Form: React.FC<FormProps> = ({ form, sendEmail, isSent, isMessage, isError }) => {
   return (
-    <FormContainer ref={form} onSubmit={sendEmail}>
+    <FormContainer ref={form} onSubmit={sendEmail} autoComplete="off">
       {isSent ? null : <Spinner />}
       {isMessage ? (
         <div className="ok">

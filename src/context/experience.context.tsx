@@ -8,7 +8,7 @@ type CardProps = {
   icon: ReactElement;
   content: {
     technology: string;
-    level: "Experienced" | "Basic";
+    level: "Familiar" | "Proficient" | "Excellent";
   }[];
 };
 
@@ -22,15 +22,23 @@ const cardExperienceContent: CardProps[] = [
     content: [
       {
         technology: "HTML",
-        level: "Experienced",
+        level: "Proficient",
       },
       {
         technology: "CSS",
-        level: "Experienced",
+        level: "Proficient",
       },
       {
-        technology: "CSS",
-        level: "Experienced",
+        technology: "JavaScript",
+        level: "Proficient",
+      },
+      {
+        technology: "ReactJs",
+        level: "Familiar",
+      },
+      {
+        technology: "TypeScript",
+        level: "Familiar",
       },
     ],
   },
@@ -41,11 +49,19 @@ const cardExperienceContent: CardProps[] = [
     content: [
       {
         technology: "Node.js",
-        level: "Basic",
+        level: "Proficient",
       },
       {
         technology: "Express",
-        level: "Experienced",
+        level: "Proficient",
+      },
+      {
+        technology: "MongoDB",
+        level: "Familiar",
+      },
+      {
+        technology: "PosgreSQL",
+        level: "Familiar",
       },
     ],
   },

@@ -10,22 +10,22 @@ export const CardContainer = styled.article`
   text-align: center;
   transition: ${variable.effect.transition};
 
-  &:hover {
+  :hover {
     border-color: ${variable.color.white};
     background: transparent;
     cursor: default;
   }
 
-  & .icon {
+  .icon {
     color: ${variable.color.primary};
     font-size: 1.4rem;
     margin-bottom: 1rem;
   }
-  & h5 {
+  h5 {
     font-size: 0.9rem;
   }
 
-  & small {
+  small {
     font-size: 0.7rem;
     color: ${variable.color.light};
   }

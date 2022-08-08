@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { variable } from "../../variable/variable.styles";
 
 export const FormContainer = styled.form`
+  max-width: 600px;
+  min-width: 300px;
   position: relative;
   flex-grow: 1;
   display: flex;
