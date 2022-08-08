@@ -73,11 +73,10 @@ export const PortfolioCardContainer = styled.div`
   }
 
   video {
-    opacity: 0;
+    opacity: 18%;
     object-fit: cover;
     width: 100%;
     transition: ${variable.effect.transition};
-
     min-height: 170px;
     :hover {
       transform: scale(1.05);

@@ -4,7 +4,7 @@ import { device } from "../../device/device.styles";
 
 export const AboutMeContainer = styled.div`
   display: grid;
-  place-items: center;
+  /* place-items: center; */
 
   @media screen and (max-width: ${device.tablet}) {
     width: 50%;
