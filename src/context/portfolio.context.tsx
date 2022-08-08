@@ -4,6 +4,7 @@ import { createContext, ReactElement } from "react";
 import v_calories from "../assets/video/calories.mp4";
 import v_map from "../assets/video/map.mp4";
 import v_recipes from "../assets/video/recipes.mp4";
+import v_portfolio from "../assets/video/portfolio.mp4";
 
 ///////////icons//////////////////
 import {
@@ -62,10 +63,10 @@ const cardPortfolioContent: CardProps[] = [
   {
     id: 3,
     title: "My Portfolio",
-    video: "",
+    video: v_portfolio,
     gitHub: "https://github.com/KonradLewandowski/my_portfolio_website",
-    youTube: "",
-    liveDemo: "",
+    youTube: "https://youtu.be/bKmOIHke7oI",
+    liveDemo: "https://konrad-lewandowski-portfolio.netlify.app",
     technologies: [
       <SiTypescript />,
       <SiReact className="rotate" style={{ color: "#18a6df" }} />,
