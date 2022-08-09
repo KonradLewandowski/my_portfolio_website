@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <AboutMeContainer>
       <MeImageContainer>
-        <img />
+        <img alt="me" />
       </MeImageContainer>
     </AboutMeContainer>
   );

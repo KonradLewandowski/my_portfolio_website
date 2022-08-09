@@ -1,3 +1,11 @@
+import { createGlobalStyle } from "styled-components";
+
+import background from "../../assets/images/pngegg.png";
+
+import { variable } from "../variable/variable.styles";
+
+const GlobalStyle = createGlobalStyle`
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -10,17 +18,6 @@
   text-decoration: none;
 }
 
-:root {
-  --color-background: #1d1d1d;
-  --color-background-variant: #2c2c6c;
-  --color-primary: #b48020;
-  --color-primary-variant: rgba(255, 170, 70, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
-
-  --transition: all 0.4 ease;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -31,10 +28,10 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-background);
-  color: var(--color-white);
+  background:  ${variable.color.background};
+  color: ${variable.color.white};
   line-height: 1.7;
-  background-image: url(../src//assets/images/pngegg.png);
+  background-image: url(${background}) ;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,12 +51,12 @@ h1 {
 }
 
 a {
-  color: var(--color-primary);
-  transition: var(--transition);
+  color: ${variable.color.primary};
+  transition: ${variable.effect.transition};
 }
 
 a:hover {
-  color: var(--color-white);
+  color: ${variable.color.white};
 }
 
 img {
@@ -67,3 +64,6 @@ img {
   width: 100%;
   object-fit: cover;
 }
+`;
+
+export default GlobalStyle;
