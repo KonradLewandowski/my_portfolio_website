@@ -5,7 +5,6 @@ import { variable } from "../../../variable/variable.styles";
 export const CardContainer = styled.article`
   background: ${variable.color.backgoundVariant};
   border: 1px solid transparent;
-  /* border-radius: 1rem; */
   padding: 2rem;
   text-align: center;
   transition: ${variable.effect.transition};

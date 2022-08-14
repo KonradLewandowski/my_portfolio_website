@@ -38,7 +38,7 @@ const cardPortfolioContent: CardProps[] = [
     title: "Calories Calculator",
     video: v_calories,
     gitHub: "https://github.com/KonradLewandowski/calories-calculator",
-    youTube: "https://youtu.be/xXfNezI8pdM",
+    youTube: "https://youtu.be/-B6ga8fTDko",
     liveDemo: "https://calories-calculator-konrad.herokuapp.com/signup",
     technologies: [<SiJavascript />, <GrNode />, <SiExpress />, <SiMongodb />, <SiPug />],
   },
