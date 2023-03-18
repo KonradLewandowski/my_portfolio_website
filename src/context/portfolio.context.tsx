@@ -35,15 +35,6 @@ type CardProps = {
 const cardPortfolioContent: CardProps[] = [
   {
     id: 0,
-    title: "Calories Calculator",
-    video: v_calories,
-    gitHub: "https://github.com/KonradLewandowski/calories-calculator",
-    youTube: "https://youtu.be/-B6ga8fTDko",
-    liveDemo: "https://calories-calculator-konrad.herokuapp.com/signup",
-    technologies: [<SiJavascript />, <GrNode />, <SiExpress />, <SiMongodb />, <SiPug />],
-  },
-  {
-    id: 1,
     title: "Map Workout",
     video: v_map,
     gitHub: "https://github.com/KonradLewandowski/map-workout-app",
@@ -52,7 +43,7 @@ const cardPortfolioContent: CardProps[] = [
     technologies: [<SiJavascript />, <SiHtml5 />, <SiCss3 />, <SiLeaflet />],
   },
   {
-    id: 2,
+    id: 1,
     title: "Recipes",
     video: v_recipes,
     gitHub: "https://github.com/KonradLewandowski/recipies-app-project",
@@ -61,7 +52,7 @@ const cardPortfolioContent: CardProps[] = [
     technologies: [<SiJavascript />, <SiHtml5 />, <SiSass />],
   },
   {
-    id: 3,
+    id: 2,
     title: "My Portfolio",
     video: v_portfolio,
     gitHub: "https://github.com/KonradLewandowski/my_portfolio_website",

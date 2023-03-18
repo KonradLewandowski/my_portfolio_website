@@ -21,15 +21,15 @@ const cardAboutContent: CardProps[] = [
     title: "Who Am I?",
     description: "A few words about me",
     content:
-      "I am a former soldier and for the past year I have focused on building and expanding my skills in the field of web development. Frontend, Backend, data bases and external API’s are some of the technologies I have made myself familiar with. I would gladly become a part of a team of developers, from whom I can learn and further expand my abilities while working to achieve common objectives.",
+      "As a former Air Cavalry soldier turned frontend developer, I bring a unique combination of leadership skills and technical expertise to your team. With proficiency in JavaScript, Node.js, HTML, CSS (preprocessors), Jira, and Git version control system, I have contributed to the development of solutions for prestigious clients such as BNY Mellon, AirElite, and LaSalle. I am a strong team player and quick learner, eager to collaborate with other developers and expand my abilities. If you're looking for a driven and versatile developer with a proven track record, I believe I am an ideal candidate for the role.",
   },
   {
     id: 1,
     icon: <RiFolderLine className={iconClassName} />,
-    title: "Projects",
-    description: "4+ completed",
+    title: "Commercial Experience",
+    description: "Web Developer",
     content:
-      "I have completed numerous courses during which I built a variety of projects alongside the instructors and used the experience I gained to create four projects of my own since then improving and expanding my knowledge along the way.",
+      "As a Web Developer, I have worked with various technologies including Wordpress, Git version control, Jira project management tool, JavaScript programming language, Sass CSS preprocessor, and some PHP programming language. Additionally, I have used Docker software containerization tool. This enabled me to create responsive websites, web applications, and deliver business value to clients through efficient implementation of functionalities.",
   },
   {
     id: 2,
@@ -66,7 +66,9 @@ export const AboutProvider: newProvider = ({ children }) => {
     cardAboutContent,
   };
 
-  return <AboutContext.Provider value={value}>{children}</AboutContext.Provider>;
+  return (
+    <AboutContext.Provider value={value}>{children}</AboutContext.Provider>
+  );
 };
 
 export default AboutContext;

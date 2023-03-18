@@ -13,14 +13,17 @@ const Experience = () => {
   type CardProps = {
     id: number;
     title: string;
-    content: { technology: string; level: "Familiar" | "Proficient" | "Excellent" }[];
+    content: {
+      technology: string;
+      level: "Familiar" | "Proficient" | "Excellent";
+    }[];
     icon: ReactElement;
   };
 
   return (
     <Section id="experience">
       <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h2>Familiar Technologies</h2>
       <ExperienceContainer>
         {cardExperienceContent.map((card: CardProps) => {
           return <ExperienceCard key={card.id} {...card} />;

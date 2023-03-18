@@ -3,9 +3,10 @@ import styled from "styled-components";
 import { variable } from "../../../variable/variable.styles";
 
 export const CardContainer = styled.article`
+  width: 200px;
   background: ${variable.color.backgoundVariant};
   border: 1px solid transparent;
-  padding: 2rem;
+  padding: ${variable.spacings["16"]};
   text-align: center;
   transition: ${variable.effect.transition};
 
@@ -18,7 +19,7 @@ export const CardContainer = styled.article`
   .icon {
     color: ${variable.color.primary};
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: ${variable.spacings["16"]};
   }
   h5 {
     font-size: 0.9rem;

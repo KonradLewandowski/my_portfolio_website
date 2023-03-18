@@ -17,7 +17,6 @@ export const ExperienceCardContainer = styled.div`
 
   h3 {
     text-align: center;
-
     margin-bottom: 2rem;
   }
 
@@ -27,7 +26,7 @@ export const ExperienceCardContainer = styled.div`
 
   > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 0;
   }

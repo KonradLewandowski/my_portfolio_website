@@ -7,13 +7,14 @@ import Options from "./options/options.component";
 import { ContactContainer } from "./contact.styles";
 import { Section } from "../section/section.styles";
 
+import dotenv from "dotenv-webpack";
+
 const { me, email, messenger, phone } = {
   me: "Konrad Lewandowski",
   email: "konrad.lewandowski92@gmail.com",
   messenger: "kd.li.948",
   phone: "48666960130",
 };
-
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
@@ -21,16 +22,20 @@ const Contact = () => {
   const [isMessage, setIsMessage] = useState<boolean>(false);
   const [isError, setIsError] = useState<boolean>(false);
 
+  const serviceID: string = process.env.REACT_APP_SERVICE_ID!;
+  const templateID: string = process.env.REACT_APP_TEMPLATE_ID!;
+  const userID: string = process.env.REACT_APP_USER_ID!;
+
   const sendEmail = async (e: React.MouseEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
       setIsSent(false);
       const { status } = await emailjs.sendForm(
-        "service_yuv6bgp",
-        "template_giw610e",
+        serviceID,
+        templateID,
         form.current!,
-        "9DRt657c13PDRkhNT"
+        userID
       );
 
       if (status === 200) {

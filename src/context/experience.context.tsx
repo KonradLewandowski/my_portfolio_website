@@ -25,7 +25,7 @@ const cardExperienceContent: CardProps[] = [
         level: "Proficient",
       },
       {
-        technology: "CSS",
+        technology: "CSS / SASS",
         level: "Proficient",
       },
       {
@@ -56,12 +56,43 @@ const cardExperienceContent: CardProps[] = [
         level: "Proficient",
       },
       {
+        technology: "PHP",
+        level: "Familiar",
+      },
+      {
         technology: "MongoDB",
         level: "Familiar",
       },
       {
-        technology: "PosgreSQL",
+        technology: "MySQL",
         level: "Familiar",
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Other Technologies and Solutions",
+    icon: <BsPatchCheckFill className={iconClassName} />,
+    content: [
+      {
+        technology: "WordPress",
+        level: "Proficient",
+      },
+      {
+        technology: "Jira",
+        level: "Proficient",
+      },
+      {
+        technology: "Git",
+        level: "Proficient",
+      },
+      {
+        technology: "Postman",
+        level: "Proficient",
+      },
+      {
+        technology: "Responsive Web Design",
+        level: "Excellent",
       },
     ],
   },
