@@ -1,10 +1,21 @@
 import styled from "styled-components";
 
-import { variable } from "../../../variable/variable.styles";
-import { device } from "../../../device/device.styles";
+import { variable } from "../../../../assets/variables/global.styles";
+import {device} from "../../../../assets/variables/device.styles";
 
 export const TextContainer = styled.p`
-  min-height: 200px;
+  color: ${variable.color.white};
+  padding: ${variable.spacings["32"]} 0 0;
+
+  @media  (min-width: ${device.tablet}) {
+    height: 200px;
+  }
+  
+  @media  (max-width: ${device.mobile}) {
+    padding: ${variable.spacings["16"]} 0 0;
+    display: none;
+  }
+  
   @keyframes cursor-blink {
     50% {
       opacity: 0;
@@ -18,12 +29,4 @@ export const TextContainer = styled.p`
     font-weight: 700;
     animation: cursor-blink 1.1s linear infinite;
   }
-  /*
-  @media screen and (max-width: ${device.tablet}) {
-    min-height: 200px;
-  }
-
-  @media screen and (max-width: ${device.mobile}) {
-    min-height: 200px;
-  }*/
 `;

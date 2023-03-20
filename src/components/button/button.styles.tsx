@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-import { variable } from "../variable/variable.styles";
+import { variable } from "../../assets/variables/global.styles";
 
 const BaseButton = styled.button`
   all: unset;
-  width: max-content;
   display: inline-block;
-  padding: 0.75rem 1.2rem;
+  padding: ${variable.spacings["16"]} ${variable.spacings["32"]};
   cursor: pointer;
 `;
 
@@ -40,11 +39,13 @@ export const ButtonPrimary = styled(BaseButton)`
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: ${variable.border.small};
   }
 
   :hover {
     ::before {
       background: ${variable.color.backgoundVariant};
+      box-shadow: ${variable.shadow.basic} ${variable.color.primary};
       width: 100%;
     }
   }

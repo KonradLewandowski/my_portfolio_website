@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 
-import CV from "../../assets/pdf/cv.pdf";
+import CV from "../../uploads/pdf/cv.pdf";
 
 import { CallToActionContainer } from "./call-to-action.styles";
 import { MainButton, ButtonPrimary } from "../button/button.styles";

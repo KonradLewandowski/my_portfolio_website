@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { variable } from "../variable/variable.styles";
+import { variable } from "../../assets/variables/global.styles";
 
-import { device } from "../device/device.styles";
+import { device } from "../../assets/variables/device.styles";
 
 export const FooterContainer = styled.div`
   padding: 1rem 1rem 3rem;
