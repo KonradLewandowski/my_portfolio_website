@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
-import { device } from "../../../device/device.styles";
-import { variable } from "../../../variable/variable.styles";
+import { device } from "../../../../assets/variables/device.styles";
+import { variable } from "../../../../assets/variables/global.styles";
 
 export const CardsContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  //grid-template-columns: repeat(3, 1fr);
   gap: ${variable.gap["32"]};
 
   @media screen and (max-width: ${device.mobile}) {
-    //grid-template-columns: 1fr 1fr;
     gap: ${variable.gap["16"]};
   }
 `;

@@ -43,7 +43,6 @@ const PortfolioCard: React.FC<Props> = ({
         <div className="title">
           <h3>{title}</h3>
           <p className="pc">*On mouse over</p>
-          {/* <p className="tablet-mobile">*On click</p> */}
           <div className="technologies">
             {technologies.map((technology) => technology)}
           </div>

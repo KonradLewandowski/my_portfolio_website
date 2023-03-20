@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
-import background from "../../assets/images/pngegg.png";
+import background from "../../uploads/images/pngegg.png";
 
-import { variable } from "../variable/variable.styles";
+import { variable } from "../../assets/variables/global.styles";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -36,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
+      background-blend-mode: color-dodge;
     }
     
     h1,
@@ -65,11 +66,6 @@ const GlobalStyle = createGlobalStyle`
       object-fit: cover;
     }
     
-    div#root{
-      max-width: ${variable.container["1110"]};
-      margin: 0 auto;
-      padding: 0 ${variable.spacings["16"]};
-    }
 `;
 
 export default GlobalStyle;

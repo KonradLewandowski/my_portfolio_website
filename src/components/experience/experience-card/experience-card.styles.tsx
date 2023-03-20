@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { variable } from "../../variable/variable.styles";
-import { device } from "../../device/device.styles";
+import { variable } from "../../../assets/variables/global.styles";
+import { device } from "../../../assets/variables/device.styles";
 
 export const ExperienceCardContainer = styled.div`
   min-height: 370px;

@@ -4,7 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0c07f48-00ef-49e4-95d0-3a0e6c478280" name="Changes" comment="`init commit`" />
+    <list default="true" id="c0c07f48-00ef-49e4-95d0-3a0e6c478280" name="Changes" comment="`init commit`">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/me-about.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/images/me-about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/pngegg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/images/pngegg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pdf/cv.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/pdf/cv.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/video/calories.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/video/calories.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/video/map.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/video/map.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/video/portfolio.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/video/portfolio.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/video/recipes.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/video/recipes.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about-content/about-content.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about-content/about-content.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about-content/card/card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about-content/card/card.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about-content/card/card.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about-content/card/card.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about-content/cards/cards.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about-content/cards/cards.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about-content/text/text.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about-content/text/text.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about-me/about-me.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about-me/about-me.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/call-to-action/call-to-action.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/call-to-action/call-to-action.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/call-to-action/call-to-action.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/call-to-action/call-to-action.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/form/form.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/form/form.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/options/options.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/options/options.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/container/container.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container/container.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/device/device.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/variables/device.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/experience/experience-card/experience-card.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience/experience-card/experience-card.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/experience/experience.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/experience/experience.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/global/global.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/global/global.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/navigation.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/navigation.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portfolio/portfolio-card/portfolio-card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/portfolio-card/portfolio-card.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/portfolio/portfolio-card/portfolio-card.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/portfolio/portfolio-card/portfolio-card.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/scroll-down/scroll-down.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scroll-down/scroll-down.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/section/section.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/section/section.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/socials/socials.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/socials/socials.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/variable/variable.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/variables/global.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/portfolio.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/portfolio.context.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="portfolio_v1" />
+        <entry key="$PROJECT_DIR$" value="portfolio_prd" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +75,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Applications/MAMP/htdocs/_portfolio",
+    "last_opened_file_path": "/Applications/MAMP/htdocs/_portfolio/src/context",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -47,12 +85,18 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/konradlewandowski/.nvm/versions/node/v12.22.12/lib/node_modules/prettier",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "ts.external.directory.path": "/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Applications/MAMP/htdocs/_portfolio/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/context" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/uploads" />
+      <recent name="$PROJECT_DIR$/src/components/variable" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -88,6 +132,8 @@
       <workItem from="1678902370796" duration="2310000" />
       <workItem from="1678985024539" duration="9871000" />
       <workItem from="1679155803587" duration="14438000" />
+      <workItem from="1679227640577" duration="4542000" />
+      <workItem from="1679329571704" duration="14070000" />
     </task>
     <task id="LOCAL-00001" summary="`change some styling and logic&#10;`">
       <created>1679163412600</created>
@@ -103,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679227228839</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="`init commit`">
+      <created>1679227660693</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679227660693</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

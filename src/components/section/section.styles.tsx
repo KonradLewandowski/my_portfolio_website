@@ -1,29 +1,24 @@
 import styled from "styled-components";
 
-import { device } from "../device/device.styles";
-import { variable } from "../variable/variable.styles";
+import { device } from "../../assets/variables/device.styles";
+import { variable } from "../../assets/variables/global.styles";
 
 export const Section = styled.section`
-  padding: ${variable.spacings["72"]} 0;
-  /*  min-height: 100vh;*/
+  margin: 0 auto;
+  padding: ${variable.spacings["48"]} 0;
+  text-align: center;
 
-  & :is(h2, h5) {
-    text-align: center;
+   :is(h2, h3) {
     color: ${variable.color.light};
   }
 
-  & h2 {
+   h2 {
     color: ${variable.color.primary};
-    margin-bottom: 3rem;
+     padding: ${variable.spacings["32"]} 0;
   }
 
   @media screen and (max-width: ${device.tablet}) {
-    padding: ${variable.spacings["64"]} 0;
+    padding: ${variable.spacings["32"]} 0;
   }
 
-  @media screen and (max-width: ${device.mobile}) {
-    & > h2 {
-      padding: ${variable.spacings["32"]} 0;
-    }
-  }
 `;

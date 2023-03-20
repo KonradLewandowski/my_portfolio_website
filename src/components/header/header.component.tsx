@@ -2,7 +2,6 @@ import TypeWriter from "typewriter-effect";
 
 import CallToAction from "./../call-to-action/call-to-action.component";
 import Socials from "../socials/socials.component";
-import ScrollDown from "../scroll-down/scroll-down.component";
 
 import { HeaderContainerContent, HeaderContainer } from "./header.styles";
 import { TextLight } from "../container/container.styles";
@@ -27,7 +26,6 @@ const Header = () => {
         </TextLight>
         <CallToAction />
         <Socials />
-        <ScrollDown />
       </HeaderContainerContent>
     </HeaderContainer>
   );

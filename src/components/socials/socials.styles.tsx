@@ -1,30 +1,29 @@
 import styled from "styled-components";
 
-import { device } from "../device/device.styles";
-import { variable } from "../variable/variable.styles";
+import { device } from "../../assets/variables/device.styles";
+import { variable } from "../../assets/variables/global.styles";
 
 export const SocialsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
+  gap: ${variable.spacings["8"]};
   position: absolute;
-  left: 0;
-  bottom: 1rem;
+  left: ${variable.spacings["32"]};
+  bottom: 0;
 
   &::after {
     content: "";
     width: 1px;
-    height: 2rem;
+    height: ${variable.spacings["32"]};
     background: ${variable.color.primary};
   }
-  @media screen and (max-width: ${device.mobile}) {
-    /* display: none; */
+  
+  @media (max-width: ${device.mobile}) {
     position: relative;
     flex-direction: row;
     justify-content: center;
-    margin-top: 17vh;
-    gap: 2rem;
+    left: 0;
 
     &::after {
       content: none;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { device } from "../device/device.styles";
+import { device } from "../../assets/variables/device.styles";
 
 export const ExperienceContainer = styled.div`
   display: flex;

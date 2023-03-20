@@ -1,6 +1,6 @@
 export const variable = {
   effect: {
-    transition: "all 0.4s ease-in-out",
+    transition: "0.4s ease-in-out",
   },
   color: {
     background: "#1d1d1d",
@@ -16,6 +16,7 @@ export const variable = {
     8: "8px",
     16: "16px",
     32: "32px",
+    48: "48px",
     64: "64px",
     72: "72px",
     96: "96px",
@@ -29,4 +30,20 @@ export const variable = {
     1110: "1110px",
     700: "700px",
   },
+  fontSize: {
+    10: "10px",
+    12: "12px",
+    16: "16px",
+    24: "24px",
+    32: "32px",
+    48: "48px"
+  },
+  border:{
+    small: "10px",
+    medium: "12px",
+    large: "14px",
+  },
+  shadow:{
+    basic: "0 0 10px 2px"
+  }
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { variable } from "../variable/variable.styles";
+import { variable } from "../../assets/variables/global.styles";
 
 export const NavigationContainer = styled.div`
   background: rgba(0, 0, 0, 0.4);

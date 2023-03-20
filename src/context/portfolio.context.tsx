@@ -1,10 +1,10 @@
 import { createContext, ReactElement } from "react";
 
 ////////////videos/////////////////
-import v_calories from "../assets/video/calories.mp4";
-import v_map from "../assets/video/map.mp4";
-import v_recipes from "../assets/video/recipes.mp4";
-import v_portfolio from "../assets/video/portfolio.mp4";
+import v_calories from "../uploads/video/calories.mp4";
+import v_map from "../uploads/video/map.mp4";
+import v_recipes from "../uploads/video/recipes.mp4";
+import v_portfolio from "../uploads/video/portfolio.mp4";
 
 ///////////icons//////////////////
 import {
