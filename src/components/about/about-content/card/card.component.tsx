@@ -23,7 +23,6 @@ const Card: React.FC<Props> = ({ id, icon, title, description }) => {
       {icon}
       <h3>{title}</h3>
       <p className={'description'}>{description}</p>
-
         <p className={`dropdown ${isActiveClass ? "active" : ''}`}>{cardAboutContent[id].content}</p>
       {isActiveClass ? ( <RiArrowUpSLine className={'arrow'}/>) : (<RiArrowDownSLine className={'arrow'}/>) }
     </CardContainer>

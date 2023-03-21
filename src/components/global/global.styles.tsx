@@ -27,6 +27,8 @@ const GlobalStyle = createGlobalStyle`
     }
     
     body {
+      max-width: 100dvw;
+      overflow-x: hidden;
       font-family: "Poppins", sans-serif;
       background:  ${variable.color.background};
       color: ${variable.color.white};

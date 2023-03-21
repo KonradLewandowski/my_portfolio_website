@@ -12,17 +12,19 @@ export const CardContainer = styled.article`
   height: 200px;
   background: ${variable.color.backgoundVariant};
   border: 1px solid transparent;
+  border-radius: ${variable.border.small};
   padding: ${variable.spacings["16"]};
   transition: ${variable.effect.transition};
-
+  
   @media  (max-width: ${device.mobile}) {
-    width: 100%;
+    flex-basis: 100%;
     height: auto;
     overflow: hidden;
   }
   
   :hover {
     border-color: ${variable.color.white};
+    box-shadow: ${variable.shadow.basic} ${variable.color.white}, inset ${variable.shadow.basic} ${variable.color.white};
     background: transparent;
     cursor: pointer;
   }
@@ -46,10 +48,6 @@ export const CardContainer = styled.article`
     align-items: center;
     padding-bottom: ${variable.spacings["8"]};
   }
- 
-  .arrow{
-    margin: ${variable.spacings["8"]};
-  }
   
   .dropdown{
     max-height: 0px;
@@ -61,6 +59,10 @@ export const CardContainer = styled.article`
     }
   }
 
+  .arrow{
+    margin: ${variable.spacings["8"]};
+  }
+  
   @media (min-width: ${device.mobile}) {
     .arrow, .dropdown{
       display: none;

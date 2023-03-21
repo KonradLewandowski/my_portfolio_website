@@ -4,23 +4,20 @@ import { variable } from "../../../assets/variables/global.styles";
 import { device } from "../../../assets/variables/device.styles";
 
 export const ExperienceCardContainer = styled.div`
-  min-height: 370px;
+  flex-basis: calc(50% - ${variable.gap["32"]} / 2);
+  min-height: 400px;
   background: ${variable.color.backgoundVariant};
   border: 1px solid transparent;
-  padding: 2.4rem 5rem;
+  border-radius: ${variable.border.small};
+  padding: ${variable.spacings["32"]};
   transition: ${variable.effect.transition};
-
-  :hover {
-    background: transparent;
-    border-color: ${variable.color.white};
-  }
-
+  
   h3 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: ${variable.spacings["32"]};
   }
 
-  small {
+  p {
     color: ${variable.color.light};
   }
 
@@ -32,11 +29,10 @@ export const ExperienceCardContainer = styled.div`
   }
 
   article {
-    /* margin-left: 1rem; */
     display: grid;
     grid-template-columns: 10% 60%;
-    gap: 1rem;
-    justify-content: end;
+    gap: ${variable.gap["16"]};
+    justify-content: center;
   }
 
   .icon {
@@ -44,10 +40,39 @@ export const ExperienceCardContainer = styled.div`
     color: ${variable.color.primary};
   }
 
-  @media screen and (max-width: ${device.tablet}) {
-    min-width: 66vw;
+  @media (min-width: ${device.lgMobile}) {
+    .arrow {
+      display: none;
+    }
   }
-  @media screen and (max-width: ${device.mobile}) {
-    padding: 2.5rem;
+
+ @media (max-width: ${device.lgMobile}) {
+   flex-basis:400px;
+   min-height: unset;
+   
+   :hover{
+      border-color: ${variable.color.white};
+      box-shadow: ${variable.shadow.basic} ${variable.color.white}, inset ${variable.shadow.basic} ${variable.color.white};
+      background: transparent;
+      cursor: pointer;
+   }
+   
+   .dropdown{
+     max-height: 0px;
+     transition: max-height ${variable.effect.transition} ;
+     overflow: hidden;
+
+     &.active{
+       max-height: 450px;
+     }
+
+     .arrow{
+       margin: ${variable.spacings["8"]};
+     }
   }
+  
+  @media (max-width: ${device.mobile}) {
+    flex-basis:100%;
+  }
+ 
 `;
