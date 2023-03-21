@@ -22,7 +22,7 @@ const Experience = () => {
 
   return (
     <Section id="experience">
-      <h5>What Skills I Have</h5>
+      <p className={'before-title'}>What Skills I Have</p>
       <h2>Familiar Technologies</h2>
       <FamiliarTechnologiesContainer>
         {cardFamiliarTechnologiesContent.map((card: CardProps) => {

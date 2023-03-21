@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
   padding: 1rem 1rem 3rem;
   width: 100%;
   padding-bottom: 10vh;
-  background-color: ${variable.color.backgoundVariant};
+  background-color: ${variable.color.backgroundVariant};
   text-align: center;
 
   .name {

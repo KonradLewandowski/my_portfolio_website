@@ -10,7 +10,7 @@ export const CardContainer = styled.article`
   align-items: center;
   width: 200px;
   height: 200px;
-  background: ${variable.color.backgoundVariant};
+  background: ${variable.color.backgroundVariant};
   border: 1px solid transparent;
   border-radius: ${variable.border.small};
   padding: ${variable.spacings["16"]};

@@ -7,7 +7,7 @@ export const OptionsContainer = styled.div`
   gap: 1.2rem;
 
   .option {
-    background-color: ${variable.color.backgoundVariant};
+    background-color: ${variable.color.backgroundVariant};
     padding: 1.2rem;
     text-align: center;
     border: 1px solid transparent;

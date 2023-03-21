@@ -6,7 +6,7 @@ import AboutContent from "./about-content/about-content.component";
 const About = () => {
   return (
     <Section id="about">
-      <h5>Get To Know</h5>
+      <p className={'before-title'}>Get To Know</p>
       <h2>About Me</h2>
       <AboutContainer>
         <AboutContent />
