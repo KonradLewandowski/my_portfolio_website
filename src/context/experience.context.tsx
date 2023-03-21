@@ -14,7 +14,7 @@ type CardProps = {
 
 const iconClassName = "icon";
 
-const cardExperienceContent: CardProps[] = [
+const cardFamiliarTechnologiesContent: CardProps[] = [
   {
     id: 0,
     title: "Frontend Development",
@@ -98,20 +98,20 @@ const cardExperienceContent: CardProps[] = [
   },
 ];
 
-type ExperienceProviderType = {
-  cardExperienceContent: CardProps[];
+type FamiliarTechnologiesProviderType = {
+  cardFamiliarTechnologiesContent: CardProps[];
 };
 
-const ExperienceContext = createContext<ExperienceProviderType>({
-  cardExperienceContent: [],
+const FamiliarTechnologiesContext = createContext<FamiliarTechnologiesProviderType>({
+  cardFamiliarTechnologiesContent: [],
 });
 
 export const ExperienceProvider: newProvider = ({ children }) => {
   return (
-    <ExperienceContext.Provider value={{ cardExperienceContent }}>
+    <FamiliarTechnologiesContext.Provider value={{ cardFamiliarTechnologiesContent }}>
       {children}
-    </ExperienceContext.Provider>
+    </FamiliarTechnologiesContext.Provider>
   );
 };
 
-export default ExperienceContext;
+export default FamiliarTechnologiesContext;

@@ -1,14 +1,14 @@
 import { ReactElement, useContext } from "react";
-import ExperienceContext from "../../context/experience.context";
+import FamiliarTechnologiesContext from "../../context/experience.context";
 
-import ExperienceCard from "./experience-card/experience-card.component";
+import ExperienceCard from "./familiar-technologies-card/familiar-technologies-card.component";
 
-import { ExperienceContainer } from "./experience.styles";
+import { FamiliarTechnologiesContainer } from "./familiar-technologies.styles";
 
 import { Section } from "../section/section.styles";
 
 const Experience = () => {
-  const { cardExperienceContent } = useContext(ExperienceContext);
+  const { cardFamiliarTechnologiesContent } = useContext(FamiliarTechnologiesContext);
 
   type CardProps = {
     id: number;
@@ -24,11 +24,11 @@ const Experience = () => {
     <Section id="experience">
       <h5>What Skills I Have</h5>
       <h2>Familiar Technologies</h2>
-      <ExperienceContainer>
-        {cardExperienceContent.map((card: CardProps) => {
+      <FamiliarTechnologiesContainer>
+        {cardFamiliarTechnologiesContent.map((card: CardProps) => {
           return <ExperienceCard key={card.id} {...card} />;
         })}
-      </ExperienceContainer>
+      </FamiliarTechnologiesContainer>
     </Section>
   );
 };
