@@ -6,7 +6,12 @@ const BaseButton = styled.button`
   all: unset;
   display: inline-block;
   padding: ${variable.spacings["16"]} ${variable.spacings["32"]};
+  border-radius: ${variable.border.small};
   cursor: pointer;
+  
+  &:before{
+    border-radius: ${variable.border.small};
+  }
 `;
 
 export const MainButton = styled(BaseButton)`
@@ -15,6 +20,7 @@ export const MainButton = styled(BaseButton)`
 
   :hover {
     border: 1px solid ${variable.color.white};
+    box-shadow: ${variable.shadow.basic} ${variable.color.white}, inset ${variable.shadow.basic} ${variable.color.white};
 
     a {
       color: ${variable.color.white};
@@ -39,7 +45,7 @@ export const ButtonPrimary = styled(BaseButton)`
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: ${variable.border.small};
+    
   }
 
   :hover {
