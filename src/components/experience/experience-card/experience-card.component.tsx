@@ -12,9 +12,9 @@ const ExperienceCard: React.FC<Props> = ({ title, content, icon }) => {
     <ExperienceCardContainer>
       <h3>{title}</h3>
       <div>
-        {content.map((element) => {
+        {content.map((element, index) => {
           return (
-            <article>
+            <article key={index}>
               {icon}
               <div>
                 <h4>{element.technology}</h4>

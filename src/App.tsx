@@ -1,7 +1,3 @@
-import { Fragment } from "react";
-
-import GlobalStyle from "./components/global/global.styles";
-
 import Header from "./components/header/header.component";
 import Navigation from "./components/navigation/navigation.component";
 import About from "./components/about/about.component";
@@ -14,8 +10,10 @@ import { AboutProvider } from "./context/about.context";
 import { ExperienceProvider } from "./context/experience.context";
 import { PortfolioProvider } from "./context/portfolio.context";
 
+import GlobalStyle from "./components/global/global.styles";
+
 const App = () => (
-  <Fragment>
+  <>
     <GlobalStyle />
     <Header />
     <Navigation />
@@ -30,7 +28,7 @@ const App = () => (
     </PortfolioProvider>
     <Contact />
     <Footer />
-  </Fragment>
+  </>
 );
 
 export default App;

@@ -1,7 +1,6 @@
 import { createContext, ReactElement } from "react";
 
 ////////////videos/////////////////
-import v_calories from "../uploads/video/calories.mp4";
 import v_map from "../uploads/video/map.mp4";
 import v_recipes from "../uploads/video/recipes.mp4";
 import v_portfolio from "../uploads/video/portfolio.mp4";
@@ -9,9 +8,6 @@ import v_portfolio from "../uploads/video/portfolio.mp4";
 ///////////icons//////////////////
 import {
   SiJavascript,
-  SiMongodb,
-  SiExpress,
-  SiPug,
   SiLeaflet,
   SiSass,
   SiReact,
@@ -20,7 +16,6 @@ import {
   SiHtml5,
   SiCss3,
 } from "react-icons/si";
-import { GrNode } from "react-icons/gr";
 
 type CardProps = {
   id: number;
@@ -40,7 +35,7 @@ const cardPortfolioContent: CardProps[] = [
     gitHub: "https://github.com/KonradLewandowski/map-workout-app",
     youTube: "https://youtu.be/lrGDF5o0JYM",
     liveDemo: "https://map-app-kl.netlify.app",
-    technologies: [<SiJavascript />, <SiHtml5 />, <SiCss3 />, <SiLeaflet />],
+    technologies: [<SiJavascript key={1}/>, <SiHtml5 key={2} />, <SiCss3 key={3}/>, <SiLeaflet key={4}/>],
   },
   {
     id: 1,
@@ -49,7 +44,7 @@ const cardPortfolioContent: CardProps[] = [
     gitHub: "https://github.com/KonradLewandowski/recipies-app-project",
     youTube: "https://youtu.be/QipPqK00w-4",
     liveDemo: "https://recipies-app-kl.netlify.app",
-    technologies: [<SiJavascript />, <SiHtml5 />, <SiSass />],
+    technologies: [<SiJavascript key={1}/>, <SiHtml5 key={2}/>, <SiSass key={3}/>],
   },
   {
     id: 2,
@@ -59,9 +54,9 @@ const cardPortfolioContent: CardProps[] = [
     youTube: "https://youtu.be/bKmOIHke7oI",
     liveDemo: "https://konrad-lewandowski-portfolio.netlify.app",
     technologies: [
-      <SiTypescript />,
-      <SiReact className="rotate" style={{ color: "#18a6df" }} />,
-      <SiStyledcomponents />,
+      <SiTypescript key={1}/>,
+      <SiReact key={2} className="rotate" style={{ color: "#18a6df" }} />,
+      <SiStyledcomponents key={3}/>,
     ],
   },
 ];

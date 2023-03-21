@@ -21,12 +21,6 @@ const PortfolioCard: React.FC<Props> = ({
   liveDemo,
   technologies,
 }) => {
-  // const handleOnMouseOver = (e: React.MouseEvent<HTMLVideoElement>) => {
-  //   e.currentTarget.play();
-  // };
-  // const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) =>
-  //   e.currentTarget.pause();
-
   return (
     <PortfolioCardContainer>
       <article>
@@ -34,9 +28,6 @@ const PortfolioCard: React.FC<Props> = ({
           autoPlay
           loop
           muted
-          // preload="none"
-          // onMouseOver={handleOnMouseOver}
-          // onMouseOut={handleOnMouseOut}
         >
           <source src={video} type="video/mp4" />
         </video>
@@ -44,7 +35,7 @@ const PortfolioCard: React.FC<Props> = ({
           <h3>{title}</h3>
           <p className="pc">*On mouse over</p>
           <div className="technologies">
-            {technologies.map((technology) => technology)}
+            {technologies.map((technology) =>  technology)}
           </div>
         </div>
       </article>
