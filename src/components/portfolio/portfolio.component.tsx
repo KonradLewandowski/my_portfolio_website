@@ -22,7 +22,7 @@ const Portfolio = () => {
   const { cardPortfolioContent } = useContext(PortfolioContext);
   return (
     <Section id="portfolio">
-      <h5>What Have I Built?</h5>
+      <p className={'before-title'}>What Have I Built?</p>
       <h2>My Projects</h2>
       <PortfolioContainer>
         {cardPortfolioContent.map((card: CardProps) => (

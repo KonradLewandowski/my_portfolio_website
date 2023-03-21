@@ -4,7 +4,7 @@ export const variable = {
   },
   color: {
     background: "#1d1d1d",
-    backgoundVariant: "#000000",
+    backgroundVariant: "#000000",
     primary: "#b48020",
     primaryVariant: "rgba(255, 170, 70, 0.4)",
     white: "white",

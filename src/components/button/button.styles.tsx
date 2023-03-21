@@ -50,7 +50,7 @@ export const ButtonPrimary = styled(BaseButton)`
 
   :hover {
     ::before {
-      background: ${variable.color.backgoundVariant};
+      background: ${variable.color.backgroundVariant};
       box-shadow: ${variable.shadow.basic} ${variable.color.primary};
       width: 100%;
     }

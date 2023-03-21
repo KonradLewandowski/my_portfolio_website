@@ -1,5 +1,5 @@
 import { ReactElement, useState } from "react";
-import { ExperienceCardContainer } from "./experience-card.styles";
+import { FamiliarTechnologiesCardContainer } from "./familiar-technologies-card.styles";
 
 import {
     RiArrowDownSLine,
@@ -12,11 +12,11 @@ type Props = {
   icon: ReactElement;
 };
 
-const ExperienceCard: React.FC<Props> = ({ title, content, icon }) => {
+const FamiliarTechnologiesCard: React.FC<Props> = ({ title, content, icon }) => {
     const [isActiveClass, setIsActiveClass]  = useState(false)
 
   return (
-    <ExperienceCardContainer onClick={() =>setIsActiveClass(!isActiveClass)} >
+    <FamiliarTechnologiesCardContainer onClick={() =>setIsActiveClass(!isActiveClass)} >
       <h3>{title}</h3>
       <div className={`dropdown ${isActiveClass && 'active'}`}>
         {content.map((element, index) => {
@@ -32,8 +32,8 @@ const ExperienceCard: React.FC<Props> = ({ title, content, icon }) => {
         })}
       </div>
         {isActiveClass ? ( <RiArrowUpSLine className={'arrow'}/>) : (<RiArrowDownSLine className={'arrow'}/>) }
-    </ExperienceCardContainer>
+    </FamiliarTechnologiesCardContainer>
   );
 };
 
-export default ExperienceCard;
+export default FamiliarTechnologiesCard;

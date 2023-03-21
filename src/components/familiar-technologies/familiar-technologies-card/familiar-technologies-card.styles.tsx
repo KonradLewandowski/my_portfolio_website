@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { variable } from "../../../assets/variables/global.styles";
 import { device } from "../../../assets/variables/device.styles";
 
-export const ExperienceCardContainer = styled.div`
+export const FamiliarTechnologiesCardContainer = styled.div`
   flex-basis: calc(50% - ${variable.gap["32"]} / 2);
   min-height: 400px;
-  background: ${variable.color.backgoundVariant};
+  background: ${variable.color.backgroundVariant};
   border: 1px solid transparent;
   border-radius: ${variable.border.small};
   padding: ${variable.spacings["32"]};

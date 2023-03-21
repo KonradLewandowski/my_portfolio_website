@@ -13,7 +13,7 @@ import { NavigationContainer } from "./navigation.styles";
 const sectionsDetails = [
   { to: "home", icon: <AiOutlineHome /> },
   { to: "about", icon: <AiOutlineUser /> },
-  { to: "experience", icon: <GiSkills /> },
+  { to: "familiar-technologies", icon: <GiSkills /> },
   { to: "portfolio", icon: <AiFillProject /> },
   { to: "contact", icon: <AiOutlineMessage /> },
 ];
