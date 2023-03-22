@@ -14,7 +14,11 @@ export const variable = {
   },
   spacings: {
     8: "8px",
+    12: "12px",
+    14: "14px",
     16: "16px",
+    18: "18px",
+    22: "22px",
     32: "32px",
     48: "48px",
     64: "64px",
