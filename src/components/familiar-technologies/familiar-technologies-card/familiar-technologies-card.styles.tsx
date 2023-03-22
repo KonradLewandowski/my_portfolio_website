@@ -12,6 +12,9 @@ export const FamiliarTechnologiesCardContainer = styled.div`
   padding: ${variable.spacings["32"]};
   transition: ${variable.effect.transition};
   
+  display: flex;
+  flex-direction: column;
+  
   h3 {
     text-align: center;
     margin-bottom: ${variable.spacings["32"]};
@@ -20,34 +23,35 @@ export const FamiliarTechnologiesCardContainer = styled.div`
   p {
     color: ${variable.color.light};
   }
-
-  > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 0;
-  }
-
-  article {
-    display: grid;
-    grid-template-columns: 10% 60%;
-    gap: ${variable.gap["16"]};
-    justify-content: center;
-  }
-
+  
   .icon {
     margin-top: 6px;
     color: ${variable.color.primary};
   }
-
-  @media (min-width: ${device.lgMobile}) {
-    .arrow {
-      display: none;
-    }
+  
+  article {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 10% 60%;
+    gap: ${variable.gap["16"]};
+    justify-content: right;
   }
 
- @media (max-width: ${device.lgMobile}) {
-   flex-basis:400px;
+  .dropdown {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: ${variable.spacings["32"]};
+    margin-top: 0;
+  }
+  
+  .arrow{
+    width: 100%;
+    margin-top: auto;
+    display: none;
+  }
+
+ @media screen and  (max-width: ${device.lgMobile}) {
+   flex-basis:${variable.container.medium};
    min-height: unset;
    
    :hover{
@@ -57,22 +61,26 @@ export const FamiliarTechnologiesCardContainer = styled.div`
       cursor: pointer;
    }
    
+   .article{
+     padding: ${variable.spacings["16"]};
+   }
+   
    .dropdown{
-     max-height: 0px;
+     max-height: 0;
      transition: max-height ${variable.effect.transition} ;
      overflow: hidden;
 
      &.active{
        max-height: 450px;
      }
-
-     .arrow{
-       margin: ${variable.spacings["8"]};
-     }
+   }
+   
+   .arrow{
+     display: block;
+   }
   }
-  
+   
   @media (max-width: ${device.mobile}) {
     flex-basis:100%;
   }
- 
 `;

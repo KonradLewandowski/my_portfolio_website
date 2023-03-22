@@ -4,14 +4,25 @@ import { variable } from "../../../assets/variables/global.styles";
 import { device } from "../../../assets/variables/device.styles";
 
 export const PortfolioCardContainer = styled.div`
-  flex-basis: calc(33% -  ${variable.spacings["32"]}) ;
-  
+  flex-basis: calc(33% -  ${variable.spacings["32"]});
   position: relative;
   border: 1px solid transparent;
   border-radius: ${variable.border.small};
   background: ${variable.color.backgroundVariant};
   transition: ${variable.effect.transition};
   padding: ${variable.spacings["16"]} 0;
+
+  @media (max-width: ${device.tablet}){
+    flex-basis: calc(50% -  ${variable.spacings["32"]} / 2);
+  }
+
+  @media (max-width: ${device.lgMobile}){
+    flex-basis: ${variable.container.medium};
+  }
+
+  @media (max-width: ${device.mobile}){
+    flex-basis: 100%;
+  }
 
   .video-box:hover {
     .title{
@@ -23,7 +34,7 @@ export const PortfolioCardContainer = styled.div`
 
   .title {
     position: absolute;
-    top: ${variable.spacings["32"]};
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -82,8 +93,7 @@ export const PortfolioCardContainer = styled.div`
 
    .buttons-box {
     display: flex;
-    justify-content: center;
-    gap: ${variable.gap["16"]};
+    justify-content: space-around;
     padding: ${variable.spacings["8"]};
   }
 `;

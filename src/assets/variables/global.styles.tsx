@@ -29,6 +29,7 @@ export const variable = {
   container: {
     1110: "1110px",
     700: "700px",
+    medium: "400px",
   },
   fontSize: {
     10: "10px",

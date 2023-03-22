@@ -11,17 +11,18 @@ export const Socials = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <BsLinkedin />
+        <BsLinkedin className={"social-icon"}/>
       </a>
-      <a href="https://github.com/KonradLewandowski" target="_blank" rel="noreferrer">
-        <BsGithub />
+      <a
+          href="https://github.com/KonradLewandowski" target="_blank" rel="noreferrer">
+        <BsGithub className={"social-icon"}/>
       </a>
       <a
         href="https://nofluffjobs.com/pl/profile/NTQLZJHO?lang=en"
         target="_blank"
         rel="noreferrer"
       >
-        <ImProfile />
+        <ImProfile className={"social-icon"}/>
       </a>
     </SocialsContainer>
   );

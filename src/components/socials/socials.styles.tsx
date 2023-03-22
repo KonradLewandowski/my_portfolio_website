@@ -19,14 +19,21 @@ export const SocialsContainer = styled.div`
     background: ${variable.color.primary};
   }
   
-  @media (max-width: ${device.mobile}) {
+  @media (max-width: ${device.lgMobile}) {
     position: relative;
     flex-direction: row;
     justify-content: center;
-    left: 0;
+    gap:${variable.gap["64"]} ;
+    padding: ${variable.spacings["32"]} 0 0;
+    left: unset;
 
     &::after {
       content: none;
+    }
+    
+    .social-icon{
+      width: 48px;
+      height: 48px;
     }
   }
 `;
