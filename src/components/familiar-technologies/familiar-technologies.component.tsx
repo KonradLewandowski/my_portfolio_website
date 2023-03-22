@@ -21,7 +21,7 @@ const Experience = () => {
   };
 
   return (
-    <Section id="experience">
+    <Section id="familiar-technologies">
       <p className={'before-title'}>What Skills I Have</p>
       <h2>Familiar Technologies</h2>
       <FamiliarTechnologiesContainer>
