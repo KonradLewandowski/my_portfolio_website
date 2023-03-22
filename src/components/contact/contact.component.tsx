@@ -57,7 +57,7 @@ const Contact = () => {
 
   return (
     <Section id="contact">
-      <h5>Get In Touch</h5>
+      <p className={'before-title'}>Get In Touch</p>
       <h2>Contact Me</h2>
       <ContactContainer>
         <Options {...{ me, email, messenger, phone }} />

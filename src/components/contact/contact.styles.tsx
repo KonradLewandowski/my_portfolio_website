@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const ContactContainer = styled.div`
+import {Container} from "../container/container.styles";
+
+import {variable} from "../../assets/variables/global.styles";
+
+export const ContactContainer = styled(Container)`
   margin: 0 auto;
-  max-width: 80vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem;
-  padding-bottom: 5rem;
+  gap: ${variable.gap["32"]};
+  padding-bottom: ${variable.spacings["72"]};
 `;

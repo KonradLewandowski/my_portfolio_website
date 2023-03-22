@@ -1,7 +1,16 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 import { variable } from "../../../assets/variables/global.styles";
 import { device } from "../../../assets/variables/device.styles";
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+`
 
 export const PortfolioCardContainer = styled.div`
   flex-basis: calc(33% -  ${variable.spacings["32"]});
@@ -60,19 +69,9 @@ export const PortfolioCardContainer = styled.div`
       font-size: ${variable.fontSize["24"]};
 
       .rotate {
-        animation: rotation 2.5s infinite linear;
-      }
-
-      @keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(359deg);
-        }
+        animation: ${rotate} 2.5s infinite linear;
       }
     }
-    
   }
 
   video {

@@ -15,6 +15,7 @@ type FormProps = {
 };
 
 const Form: React.FC<FormProps> = ({ form, sendEmail, isSent, isMessage, isError }) => {
+
   return (
     <FormContainer ref={form} onSubmit={sendEmail} autoComplete="off">
       {isSent ? null : <Spinner />}
@@ -38,7 +39,7 @@ const Form: React.FC<FormProps> = ({ form, sendEmail, isSent, isMessage, isError
         placeholder="Your Message"
         required
       />
-      <ButtonPrimary type="submit">
+      <ButtonPrimary type="submit" submit>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a>Send Message</a>
       </ButtonPrimary>
