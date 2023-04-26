@@ -25,7 +25,7 @@ const PortfolioCard: React.FC<Props> = ({
     <PortfolioCardContainer>
       <article className={"video-box"}>
         <a
-          href={youTube != "" ? youTube : undefined}
+          href={youTube !== "" ? youTube : undefined}
           target="_blank"
           rel="noreferrer"
         >
