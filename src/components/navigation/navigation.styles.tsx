@@ -5,16 +5,17 @@ import { variable } from "../../assets/variables/global.styles";
 export const NavigationContainer = styled.div`
   background: rgba(0, 0, 0, 0.4);
   width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
+  padding: ${variable.spacings["16"]} ${variable.spacings["32"]};
   z-index: 2;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 2rem;
+  bottom: ${variable.spacings["32"]};
   display: flex;
-  gap: 0.8rem;
-  border-radius: 3rem;
+  gap: ${variable.spacings["16"]};
+  border-radius: ${variable.border.large};
+  border: 1px solid ${variable.color.white};
+  box-shadow: ${variable.shadow.basic} ${variable.color.primary};
   backdrop-filter: blur(15px);
 
   & a {

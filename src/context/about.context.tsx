@@ -2,7 +2,8 @@ import { createContext, ReactElement, useState } from "react";
 
 import { CgProfile } from "react-icons/cg";
 import { RiFolderLine } from "react-icons/ri";
-import { ImNext } from "react-icons/im";
+import {TbBrandReactNative} from 'react-icons/tb'
+
 
 type CardProps = {
   id: number;
@@ -21,7 +22,7 @@ const cardAboutContent: CardProps[] = [
     title: "Who Am I?",
     description: "A few words about me",
     content:
-      "As a former Air Cavalry soldier turned frontend developer, I bring a unique combination of leadership skills and technical expertise to your team. With proficiency in JavaScript, Node.js, HTML, CSS (preprocessors), Jira, and Git version control system, I have contributed to the development of solutions for prestigious clients such as BNY Mellon, AirElite, and LaSalle. I am a strong team player and quick learner, eager to collaborate with other developers and expand my abilities. If you're looking for a driven and versatile developer with a proven track record, I believe I am an ideal candidate for the role.",
+      "As a former Air Cavalry soldier turned frontend developer, I bring a unique combination of leadership skills and technical expertise to your team. With proficiency in JavaScript, Node.js, HTML, CSS (preprocessors), Jira, and Git version control system, I have contributed to the development of solutions for prestigious clients such as BNY Mellon ,AirElite, and LaSalle. I am a strong team player and quick learner, eager to collaborate with other developers and expand my abilities. If you're looking for a driven and versatile developer with a proven track record, I believe I am an ideal candidate for the role.",
   },
   {
     id: 1,
@@ -33,11 +34,11 @@ const cardAboutContent: CardProps[] = [
   },
   {
     id: 2,
-    icon: <ImNext className={iconClassName} />,
-    title: "What Next(Js)?",
+    icon: <TbBrandReactNative className={iconClassName} />,
+    title: "Am I Native?",
     description: "I would like to...",
     content:
-      "I am going to build another project which combines Backend and Frontend technologies. I am  planning on particularly mastering ReactJs in my future projects and I would also like to get acquainted with another library - NextJs.",
+      "...focus on deepening my knowledge of React and also learn React Native. React is a JavaScript library that is good for creating user interfaces, and React Native allows building mobile applications for iOS and Android. So, if I have more knowledge about React, it will be easier for me to use it in practice, and learning React Native will help me create mobile interfaces on similar principles to React, but with tools dedicated to mobile applications.",
   },
 ];
 

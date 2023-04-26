@@ -50,7 +50,7 @@ export const CardContainer = styled.article`
   }
   
   .dropdown{
-    max-height: 0px;
+    max-height: 0;
     transition: max-height ${variable.effect.transition} ;
     overflow: hidden;
     

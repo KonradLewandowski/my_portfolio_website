@@ -75,7 +75,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Applications/MAMP/htdocs/_portfolio/src/context",
+    "last_opened_file_path": "/Users/konradlewandowski/PhpstormProjects/_portfolio/src/uploads/video",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,14 +83,16 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/konradlewandowski/.nvm/versions/node/v12.22.12/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "ts.external.directory.path": "/Applications/MAMP/htdocs/_portfolio/node_modules/typescript/lib",
+    "prettierjs.PrettierConfiguration.Package": "/Users/konradlewandowski/PhpstormProjects/_portfolio/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/konradlewandowski/PhpstormProjects/_portfolio/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/uploads/video" />
+      <recent name="$PROJECT_DIR$/src/uploads/pdf" />
       <recent name="$PROJECT_DIR$/src/context" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -107,7 +109,7 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v18.16.0/bin/node" />
       <envs />
       <method v="2" />
     </configuration>
@@ -134,6 +136,7 @@
       <workItem from="1679155803587" duration="14438000" />
       <workItem from="1679227640577" duration="4542000" />
       <workItem from="1679329571704" duration="14070000" />
+      <workItem from="1682522349229" duration="3260000" />
     </task>
     <task id="LOCAL-00001" summary="`change some styling and logic&#10;`">
       <created>1679163412600</created>

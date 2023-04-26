@@ -23,25 +23,25 @@ const PortfolioCard: React.FC<Props> = ({
 }) => {
   return (
     <PortfolioCardContainer>
-      <article className={'video-box'}>
-        <a href={youTube} target="_blank" rel="noreferrer">
+      <article className={"video-box"}>
+        <a
+          href={youTube != "" ? youTube : undefined}
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className="title">
             <h3>{title}</h3>
             <p className="pc">*On mouse over</p>
             <div className="technologies">
-              {technologies.map((technology) =>  technology)}
+              {technologies.map((technology) => technology)}
             </div>
           </div>
-        <video
-          autoPlay
-          loop
-          muted
-          >
-          <source src={video} type="video/mp4" />
-        </video>
+          <video autoPlay loop muted>
+            <source src={video} type="video/mp4" />
+          </video>
         </a>
       </article>
-      <div className={'buttons-box'}>
+      <div className={"buttons-box"}>
         <MainButton>
           <a href={gitHub} target="_blank" rel="noreferrer">
             GitHub
