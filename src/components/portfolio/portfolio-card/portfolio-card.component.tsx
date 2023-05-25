@@ -7,7 +7,7 @@ import { MainButton, ButtonPrimary } from "../../button/button.styles";
 type Props = {
   title: string;
   video: string;
-  gitHub: string;
+  gitHub: string[];
   youTube: string;
   liveDemo: string;
   technologies: ReactElement[];
@@ -42,11 +42,23 @@ const PortfolioCard: React.FC<Props> = ({
         </a>
       </article>
       <div className={"buttons-box"}>
-        <MainButton>
-          <a href={gitHub} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </MainButton>
+        <div className={"buttons-box__github"}>
+          {gitHub.map((link, index) => {
+            return (
+              <MainButton>
+                <a href={link} target="_blank" rel="noreferrer">
+                  {index > 0 ? (
+                    <small className={"buttons-box__second-link"}>
+                      GitHub 2nd
+                    </small>
+                  ) : (
+                    "GitHub"
+                  )}
+                </a>
+              </MainButton>
+            );
+          })}
+        </div>
         <ButtonPrimary>
           <a href={liveDemo} target="_blank" rel="noreferrer">
             Live Demo
