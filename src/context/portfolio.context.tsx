@@ -5,6 +5,7 @@ import v_map from "../uploads/video/map.mp4";
 import v_recipes from "../uploads/video/recipes.mp4";
 import v_portfolio from "../uploads/video/portfolio.mp4";
 import v_shop from "../uploads/video/shop.mp4";
+import v_mern from "../uploads/video/mern.mp4";
 
 ///////////icons//////////////////
 import {
@@ -17,9 +18,13 @@ import {
   SiHtml5,
   SiCss3,
   SiFirebase,
+  SiMongodb,
+  SiExpress,
+  SiNodedotjs,
+  SiAmazonaws,
 } from "react-icons/si";
 
-type CardProps = {
+interface ICardProps {
   id: number;
   title: string;
   video: string;
@@ -27,9 +32,10 @@ type CardProps = {
   youTube: string;
   liveDemo: string;
   technologies: ReactElement[];
-};
+  publishedAt: string;
+}
 
-const cardPortfolioContent: CardProps[] = [
+const cardPortfolioContent: ICardProps[] = [
   {
     id: 0,
     title: "Map Workout",
@@ -43,6 +49,7 @@ const cardPortfolioContent: CardProps[] = [
       <SiCss3 key={3} />,
       <SiLeaflet key={4} />,
     ],
+    publishedAt: "2022-07-01 00:00:00",
   },
   {
     id: 1,
@@ -56,6 +63,7 @@ const cardPortfolioContent: CardProps[] = [
       <SiHtml5 key={2} />,
       <SiSass key={3} />,
     ],
+    publishedAt: "2022-07-01 00:00:00",
   },
   {
     id: 2,
@@ -69,6 +77,7 @@ const cardPortfolioContent: CardProps[] = [
       <SiReact key={2} className="rotate" style={{ color: "#18a6df" }} />,
       <SiStyledcomponents key={3} />,
     ],
+    publishedAt: "2022-07-01 00:00:00",
   },
   {
     id: 3,
@@ -78,33 +87,37 @@ const cardPortfolioContent: CardProps[] = [
     youTube: "",
     liveDemo: "https://crwn-clothing-kl.netlify.app/",
     technologies: [
-      <SiFirebase key={4} />,
+      <SiFirebase key={1} />,
       <SiReact key={2} className="rotate" style={{ color: "#18a6df" }} />,
       <SiStyledcomponents key={3} />,
       <SiJavascript key={4} />,
     ],
+    publishedAt: "2022-07-01 00:00:00",
   },
   {
     id: 4,
     title: "MERN",
-    video: v_shop,
+    video: v_mern,
     gitHub: [
       "https://github.com/KonradLewandowski/_mern_app_backend.git",
       "https://github.com/KonradLewandowski/_mern_app_frontend.git",
     ],
     youTube: "",
-    liveDemo: "https://crwn-clothing-kl.netlify.app/",
+    liveDemo: "https://mern-app-klewandowski.netlify.app/",
     technologies: [
-      <SiFirebase key={4} />,
+      <SiMongodb key={1} />,
+      <SiExpress key={3} />,
       <SiReact key={2} className="rotate" style={{ color: "#18a6df" }} />,
-      <SiStyledcomponents key={3} />,
-      <SiJavascript key={4} />,
+      <SiNodedotjs key={4} />,
+      <SiTypescript key={5} />,
+      <SiAmazonaws key={6} />,
     ],
+    publishedAt: "2023-05-25 18:00:00",
   },
 ];
 
 type PortfolioProviderType = {
-  cardPortfolioContent: CardProps[];
+  cardPortfolioContent: ICardProps[];
 };
 
 const PortfolioContext = createContext<PortfolioProviderType>({

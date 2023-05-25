@@ -4,26 +4,38 @@ import { PortfolioCardContainer } from "./portfolio-card.styles";
 
 import { MainButton, ButtonPrimary } from "../../button/button.styles";
 
-type Props = {
+import { dateComparer } from "../../../helpers/date-comparer.helper";
+
+import NewIcon from "../../../uploads/images/new-icon.png";
+
+interface IProps {
   title: string;
   video: string;
   gitHub: string[];
   youTube: string;
   liveDemo: string;
   technologies: ReactElement[];
-};
+  publishedAt: string;
+}
 
-const PortfolioCard: React.FC<Props> = ({
+const PortfolioCard = ({
   title,
   video,
   gitHub,
   youTube,
   liveDemo,
   technologies,
-}) => {
+  publishedAt,
+}: IProps) => {
+  const isWithinNDays = dateComparer(publishedAt, 30);
+
   return (
-    <PortfolioCardContainer>
+    <PortfolioCardContainer isWithinNDays={isWithinNDays}>
       <article className={"video-box"}>
+        <div className={`new`}>
+          <img src={NewIcon} alt="" />
+        </div>
+
         <a
           href={youTube !== "" ? youTube : undefined}
           target="_blank"

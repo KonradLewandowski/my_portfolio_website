@@ -1,7 +1,11 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
 import { variable } from "../../../assets/variables/global.styles";
 import { device } from "../../../assets/variables/device.styles";
+
+interface IContainerProps {
+  isWithinNDays: boolean;
+}
 
 const rotate = keyframes`
   from {
@@ -12,7 +16,7 @@ const rotate = keyframes`
   }
 `;
 
-export const PortfolioCardContainer = styled.div`
+export const PortfolioCardContainer = styled.div<IContainerProps>`
   flex-basis: calc(33% - ${variable.spacings["32"]});
   position: relative;
   border: 1px solid transparent;
@@ -22,7 +26,28 @@ export const PortfolioCardContainer = styled.div`
   padding: ${variable.spacings["16"]} 0;
 
   height: 350px;
+  .new {
+    display: none;
+    ${(props) =>
+      props.isWithinNDays &&
+      css`
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+      `};
 
+    img {
+      padding: ${variable.spacings["8"]};
+      width: 75px;
+      height: 75px;
+    }
+  }
   @media (max-width: ${device.tablet}) {
     flex-basis: calc(50% - ${variable.spacings["32"]} / 2);
   }
@@ -35,12 +60,16 @@ export const PortfolioCardContainer = styled.div`
     flex-basis: 100%;
   }
 
-  .video-box:hover {
-    .title {
-      transition: opacity ${variable.effect.transition};
-      opacity: 0;
+  .video-box {
+    position: relative;
+    &:hover {
+      .title {
+        transition: opacity ${variable.effect.transition};
+        opacity: 0;
+      }
+
+      cursor: pointer;
     }
-    cursor: pointer;
   }
 
   .title {

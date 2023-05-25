@@ -11,11 +11,12 @@
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
+
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
     "typeRoots": ["./src/types.d.ts"]
   },
+  "resolveJsonModule": true,
   "include": ["src"]
 }
