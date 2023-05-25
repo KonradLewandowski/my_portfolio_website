@@ -1,10 +1,10 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 import { variable } from "../../assets/variables/global.styles";
-import {device} from "../../assets/variables/device.styles";
+import { device } from "../../assets/variables/device.styles";
 
 interface ButtonProps {
-    submit?: boolean;
+  submit?: boolean;
 }
 
 const BaseButton = styled.button`
@@ -13,14 +13,18 @@ const BaseButton = styled.button`
   padding: ${variable.spacings["16"]} ${variable.spacings["32"]};
   border-radius: ${variable.border.small};
   cursor: pointer;
-  
-  &:before{
+  height: fit-content;
+
+  &:before {
     border-radius: ${variable.border.small};
   }
-  @media (max-width: ${device.tablet}){
+
+  a {
+    white-space: nowrap;
+  }
+  @media (max-width: ${device.tablet}) {
     padding: ${variable.spacings["14"]} ${variable.spacings["18"]};
   }
-  
 `;
 
 export const MainButton = styled(BaseButton)`
@@ -29,7 +33,8 @@ export const MainButton = styled(BaseButton)`
 
   :hover {
     border: 1px solid ${variable.color.white};
-    box-shadow: ${variable.shadow.basic} ${variable.color.white}, inset ${variable.shadow.basic} ${variable.color.white};
+    box-shadow: ${variable.shadow.basic} ${variable.color.white},
+      inset ${variable.shadow.basic} ${variable.color.white};
 
     a {
       color: ${variable.color.white};
@@ -44,10 +49,11 @@ export const MainButton = styled(BaseButton)`
 
 export const ButtonPrimary = styled(BaseButton)<ButtonProps>`
   position: relative;
-  ${props  =>
-          props.submit && css`
-          max-width: 140px;`
-  }
+  ${(props) =>
+    props.submit &&
+    css`
+      max-width: 140px;
+    `}
   ::before {
     transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -58,7 +64,6 @@ export const ButtonPrimary = styled(BaseButton)<ButtonProps>`
     position: absolute;
     top: 0;
     left: 0;
-    
   }
 
   :hover {

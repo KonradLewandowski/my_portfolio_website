@@ -4,26 +4,38 @@ import { PortfolioCardContainer } from "./portfolio-card.styles";
 
 import { MainButton, ButtonPrimary } from "../../button/button.styles";
 
-type Props = {
+import { dateComparer } from "../../../helpers/date-comparer.helper";
+
+import NewIcon from "../../../uploads/images/new-icon.png";
+
+interface IProps {
   title: string;
   video: string;
-  gitHub: string;
+  gitHub: string[];
   youTube: string;
   liveDemo: string;
   technologies: ReactElement[];
-};
+  publishedAt: string;
+}
 
-const PortfolioCard: React.FC<Props> = ({
+const PortfolioCard = ({
   title,
   video,
   gitHub,
   youTube,
   liveDemo,
   technologies,
-}) => {
+  publishedAt,
+}: IProps) => {
+  const isWithinNDays = dateComparer(publishedAt, 30);
+
   return (
-    <PortfolioCardContainer>
+    <PortfolioCardContainer isWithinNDays={isWithinNDays}>
       <article className={"video-box"}>
+        <div className={`new`}>
+          <img src={NewIcon} alt="" />
+        </div>
+
         <a
           href={youTube !== "" ? youTube : undefined}
           target="_blank"
@@ -42,11 +54,23 @@ const PortfolioCard: React.FC<Props> = ({
         </a>
       </article>
       <div className={"buttons-box"}>
-        <MainButton>
-          <a href={gitHub} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </MainButton>
+        <div className={"buttons-box__github"}>
+          {gitHub.map((link, index) => {
+            return (
+              <MainButton>
+                <a href={link} target="_blank" rel="noreferrer">
+                  {index > 0 ? (
+                    <small className={"buttons-box__second-link"}>
+                      GitHub 2nd
+                    </small>
+                  ) : (
+                    "GitHub"
+                  )}
+                </a>
+              </MainButton>
+            );
+          })}
+        </div>
         <ButtonPrimary>
           <a href={liveDemo} target="_blank" rel="noreferrer">
             Live Demo
