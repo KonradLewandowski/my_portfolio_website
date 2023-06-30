@@ -27,7 +27,7 @@ const PortfolioCard = ({
   technologies,
   publishedAt,
 }: IProps) => {
-  const isWithinNDays = dateComparer(publishedAt, 30);
+  const isWithinNDays = dateComparer(publishedAt, 180);
 
   return (
     <PortfolioCardContainer isWithinNDays={isWithinNDays}>
